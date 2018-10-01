@@ -1,2 +1,66 @@
 \chapter{Funzioni}
-\subsection{Definizione}
+\section{Definizione}
+Dati due insiemi $\mathbb{X},\mathbb{Y}$ qualsiasi, una funzione di dominio $\mathbb{X}$ e valori in $\mathbb{Y}$ (=codominio) è una qualsiasi legge che ad ogni elemento di $\mathbb{X}$ associa uno (e \textbf{uno solo}) elemento di $\mathbb{Y}$.
+\begin{center}
+	\begin{LARGE}
+		$f: \mathbb{X} \rightarrow \mathbb{Y}$\\
+	\end{LARGE}
+	$x \rightarrow y=f(x)$
+\end{center}
+
+\section{Funzioni particolari}
+\subsection{Funzione costante}
+\begin{Large}
+$\bar{y} \in \mathbb{Y}, f: \mathbb{X} \rightarrow \mathbb{Y}\\
+f(x)=\bar{y}\ \forall\ x \in \mathbb{X}$
+\end{Large}
+\subsection{Funzione identità}
+\begin{Large}
+$I_x: \mathbb{X} \rightarrow \mathbb{X}\\
+I_x(x)=x\ \forall\ x \in \mathbb{X}$
+\end{Large}
+\subsection{Funzione restrizione}
+\begin{Large}
+$f: \mathbb{X} \rightarrow \mathbb{Y}; \mathbb{A} \subseteq \mathbb{Y}\\
+f\restriction_\mathbb{A} =f(x)\ \forall\ x \in \mathbb{A}\\
+f\restriction_\mathbb{A}: \mathbb{A} \rightarrow \mathbb{Y};\ x \rightarrow f(x)$
+\end{Large}
+
+\section{Insieme Immagine}
+Sia $f: \mathbb{X} \rightarrow \mathbb{Y}$ e $\mathbb{A} \subseteq \mathbb{Y}$, diremo $\mathbb{A}$ tramite $f$ l'insieme $f(\mathbb{A}) = \{f(x) | x \in \mathbb{A}\}$
+Se $\mathbb{A} = \mathbb{X}$, $f(\mathbb{X})$ è semplicemente detta Immagine di $f$; $f(\mathbb{X}) = Imf$
+
+\section{Iniettività, Suriettività e Biettività}
+Sia $f: \mathbb{X} \rightarrow \mathbb{Y}$
+\subsection{Iniettività}
+Se: \begin{Large}
+$\forall x_1,x_2 \in \mathbb{X}, x_1 \neq x_2, f(x_1) \neq f(x_2)$ 
+\end{Large} 
+allora la funzione $f$ è una funzione \textbf{Iniettiva}.\\
+\\
+Def 2:\\
+\begin{Large}
+$f(x_1) = f(x_2) \iff x_1=x_2$ 
+\end{Large}
+
+\subsection{Suriettività}
+Se: \begin{Large}
+$\forall y \in \mathbb{Y}\ \exists\ x \in \mathbb{X}\ |\ f(x) = y$ 
+\end{Large} 
+allora la funzione $f$ è una funzione \textbf{Suriettiva}.\\
+\\
+Def 2:\\
+\begin{Large}
+$Imf = \mathbb{Y}$ 
+\end{Large}
+
+\subsection{Biettività}
+La funzione $f$ è \textbf{Biettiva} $\iff$ $f$ è sia iniettiva che suriettiva.
+
+\section{Grafico}
+Sia $f: \mathbb{X} \rightarrow \mathbb{Y}$; si dice grafico di $f$ (indicato con $G(f)$ o $graph(f)$) il sottoinsieme di $\mathbb{X}\times\mathbb{Y}$ definito come:\\
+\begin{Large}
+$graph(f)=\{(x,f(x)), x \in \mathbb{X}\} \subseteq \mathbb{X}\times\mathbb{Y}$
+\end{Large}\\
+\\
+Spesso si usa improriamente la parola \textit{funzione} per indicare il \textit{grafico di funzione}, ma è generalmente accettato a scopo semplificazione del discorso
