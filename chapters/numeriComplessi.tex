@@ -60,3 +60,56 @@ $|\bar{z}| = |z|\\
 z\bar{z}=|z|^2\\
 \frac{1}{z} = \frac{\bar{z}}{|z|^2}$
 \end{Large}
+
+\section{Rappresentazione trigonometrica}
+$z = x+iy$\\
+Un numero complesso è univoco rispetto la sua distanza dall'origine del piano di Gauss e l'angolo con l'asse delle ascisse, è quindi rappresentabile in funzione di questi due fattori:\\
+\begin{Large}
+$z=r(cos(\theta)+isen(\theta)) = r(cos(\theta+2k\pi)+isen(\theta+2k\pi)) \forall k \in \mathbb{Z}$
+\end{Large}\\
+---------------TBD: INSERIRE GRAFICO--------------------\\
+In particolare:\\
+\begin{Large}
+$r = |z| \geq 0\\
+\theta$ è detto \textbf{argomento} di $z$
+\end{Large}
+
+\section{Operazioni con rappresentazione trigonometrica}
+\subsection{Prodotto}
+$z_1,z_2 \in \mathbb{C}$;  $\theta_1 = argz_1,\ \theta_2=argz_2$\\
+\begin{Large}
+$z_1z_2=|z_1||z_2|(cos(\theta_1+\theta_2)+isen(\theta_1+\theta_2))$
+\end{Large}
+\subsubsection{Dimostrazione}
+$z_1z_2=|z_1|(cos(\theta_1)+isen(\theta_1)) * |z_2|(cos(\theta_2)+isen(\theta_2))=\\
+|z_1||z_2|(cos(\theta_1)cos(\theta_2) + i^2sen(\theta_1)sen(\theta_2) + icos(\theta_1)sen(\theta_2) + isen(\theta_1)cos(\theta_2)) =\\
+|z_1||z_2|((cos(\theta_1)cos(\theta_2)-sen(\theta_1)sen(\theta_2)) + i(cos(\theta_1)sen(\theta_2) + sen(\theta_1)cos(\theta_2))) =
+z_1z_2=|z_1||z_2|(cos(\theta_1+\theta_2)+isen(\theta_1+\theta_2))$
+\subsection{Potenza - formula di Moivre}
+$z \in \mathbb{C}$\\
+\begin{Large}
+$z^n = |z|^n(cos(n\theta)+isen(n\theta))$
+\end{Large}
+\subsection{Radici n-esime}
+$w,z \in \mathbb{C}$\; $n \in \mathbb{N}$\\
+Se $n>1$, un numero $z$ è radice n-esima di $w \iff z^n=w$\\
+Sia $w \in \mathbb{C}, n \in \mathbb{N}, n>1, w=|w|(cos(\theta)+isen(\theta)$:\\
+\begin{enumerate}
+\item[i.] Se $w=0$ la sola radice di $w$ è $z=0$
+\item[ii.] Se $w\neq0$ allora $w$ ha \textbf{n} radici \textbf{distinte} che sono:\\
+\begin{Large}
+$z_k=\sqrt[n]{|w|}(cos(\frac{\theta+2k\pi}{n})+isen(\frac{\theta+2k\pi}{n})),\ k \in \mathbb{N},\ 0\leq k<n$
+\end{Large}
+\end{enumerate}
+\subsubsection{Dimostrazione}
+\begin{enumerate}
+\item[i.]$w=0 \iff |z^n|=0 \iff |z|=0 \iff z=0$
+\item[ii.]$z=|z|(cos(t)+isen(t))$; $z^n=w \iff \\
+|z|^n(cos(nt)+isen(nt)) = |w|(cos(\theta+2k\pi)+isen(\theta +2k\pi) \iff
+\begin{cases}
+|z|^n = |w|\\
+nt = \theta +2k\pi
+\end{cases}$
+\end{enumerate}
+\subsection{Teorema fondamentale dell'algebra}
+L'equazione polinomiale della forma: $a_nz^n + a_{n-1}z^{n-1}+...+a_1z+a_0$, $a_n \neq 0$, $a_i \in \mathbb{C}$ ha esattamente \textbf{n} radici in $\mathbb{C}$
