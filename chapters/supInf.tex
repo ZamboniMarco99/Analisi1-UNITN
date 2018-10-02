@@ -1,0 +1,84 @@
+\chapter{Estremi di insiemi}
+\section{Definizioni}
+Sia $\mathbb{A} \subseteq \mathbb{R}$.
+\subsection{Maggiorante}
+Si dice che $\mathbb{A}$ è \textbf{superiormente limitato} se:\\
+\begin{Large}
+$\exists\ M \in \mathbb{R}\ |\ x \leq M\ \forall\ x \in \mathbb{A}$
+\end{Large}\\
+$M$ viene chiamato \textbf{maggiorante}
+\subsection{Minorante}
+Si dice che $\mathbb{A}$ è \textbf{inferiormente limitato} se:\\
+\begin{Large}
+$\exists\ m \in \mathbb{R}\ |\ x \geq m\ \forall\ x \in \mathbb{A}$
+\end{Large}\\
+$m$ viene chiamato \textbf{minorante}
+\subsection{Massimo}
+$max\mathbb{A}=\bar{x} \in \mathbb{R}$ è \textbf{massimo} di $\mathbb{A}$ se:\\
+\begin{Large}
+$\begin{cases}
+x \leq \bar{x}\ \forall\ x \in \mathbb{A}\\
+\bar{x} \in \mathbb{A}
+\end{cases}$
+\end{Large}
+\subsection{Minimo}
+$min\mathbb{A}=\hat{x} \in \mathbb{R}$ è \textbf{minimo} di $\mathbb{A}$ se:\\
+\begin{Large}
+$\begin{cases}
+x \geq \hat{x}\ \forall\ x \in \mathbb{A}\\
+\hat{x} \in \mathbb{A}
+\end{cases}$
+\end{Large}
+\subsection{Osservazioni}
+\begin{enumerate}
+\item Se $\exists\ max\mathbb{A}$ o $\exists\ min\mathbb{A}$, essi sono \textbf{unici}
+\item $\exists\ max\mathbb{A} \iff \exists\ M \in \mathbb{R}\ |\ x \leq M\ \forall\ x \in \mathbb{A}\\
+\exists\ min\mathbb{A} \iff \exists\ m \in \mathbb{R}\ |\ x \geq m\ \forall\ x \in \mathbb{A}$
+\end{enumerate}
+\subsection{Estremo superiore}
+Viene definito \textbf{estremo superiore} di A:\\
+\begin{Large}
+$sup\mathbb{A} = min\{M \in \mathbb{R} | x \leq M\ \forall\ x \in \mathbb{A}\}$
+\end{Large}
+\subsection{Estremo inferiore}
+Viene definito \textbf{estremo inferiore} di A:\\
+\begin{Large}
+$inf\mathbb{A} = max\{m \in \mathbb{R} | x \geq m\ \forall\ x \in \mathbb{A}\}$
+\end{Large}
+\subsection{Osservazioni}
+\begin{enumerate}
+\item Se $\exists\ max\mathbb{A} \implies \exists\ supA=max\mathbb{A}\\
+$Se $\exists\ minA \implies \exists\ infA=min\mathbb{A}$
+\item Se $\exists\ sup\mathbb{A}, sup\mathbb{A} \in \mathbb{A} \implies \exists max\mathbb{A} = sup\mathbb{A}$\\
+Se $\exists\ inf\mathbb{A}, inf\mathbb{A} \in \mathbb{A} \implies \exists min\mathbb{A} = inf\mathbb{A}$
+\end{enumerate}
+
+\section{Insiemi finiti}
+$\mathbb{A}$ si dice \textbf{finito} se ha un numero finito di elementi.\\
+Se $\mathbb{A} \subset \mathbb{R}$, $\mathbb{A}$ finito, $\mathbb{A} \neq \emptyset \implies \exists\ max\mathbb{A}, min\mathbb{A}$
+
+\section{Caratterizzazione sup e inf}
+\subsubsection{Caratterizzazione sup}
+Sia $\mathbb{A} \subset \mathbb{R}$ superiormente limitato, $s \in \mathbb{R}$:\\
+\begin{Large}
+$s=sup\mathbb{A} \iff
+\begin{cases}
+s \geq x\ \forall\ x \in \mathbb{A}\\
+\forall\ \epsilon > 0\ \exists\ x \in \mathbb{A}\ |\ x > s-\epsilon
+\end{cases}$
+\end{Large}
+\subsubsection{Caratterizzazione inf}
+Sia $\mathbb{A} \subset \mathbb{R}$ inferiormente limitato, $t \in \mathbb{R}$:\\
+\begin{Large}
+$t=inf\mathbb{A} \iff
+\begin{cases}
+t \leq x\ \forall\ x \in \mathbb{A}\\
+\forall\ \epsilon > 0\ \exists\ x \in \mathbb{A}\ |\ x < t+\epsilon
+\end{cases}$
+\end{Large}
+
+\section{Completezza dell'insieme dei Reali}
+Sia $\mathbb{A} \subset \mathbb{R}$, $\mathbb{A} \neq \emptyset$:\\
+\begin{Large}
+Se $\mathbb{A}$ è limitato superiormente (o inferiormente) $\implies \exists\ sup\mathbb{A} \in \mathbb{R}$ (o $\exists\ inf\mathbb{A} \in \mathbb{R}$)
+\end{Large}
