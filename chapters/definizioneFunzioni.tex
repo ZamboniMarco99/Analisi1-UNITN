@@ -64,3 +64,103 @@ $graph(f)=\{(x,f(x)), x \in \mathbb{X}\} \subseteq \mathbb{X}\times\mathbb{Y}$
 \end{Large}\\
 \\
 Spesso si usa improriamente la parola \textit{funzione} per indicare il \textit{grafico di funzione}, ma è generalmente accettato a scopo semplificazione del discorso
+
+\section{Altre funzioni particolari}
+\subsection{Funzione parte intera}
+$[\cdot]: \mathbb{R} \rightarrow \mathbb{R}\\
+x \rightarrow [x] = max\{n \in \mathbb{Z} | n\leq x\}$.
+\subsection{Funzione di Heaviside}
+$H: \mathbb{R} \rightarrow \mathbb{R}\\
+x \rightarrow H(x) =
+\begin{cases}
+1 \text{  se } x \geq 0\\
+0 \text{  se } x < 0
+\end{cases}$
+\subsection{Funzione segno}
+$sgn: \mathbb{R} \rightarrow \mathbb{R}\\
+x \rightarrow sgn(x) =
+\begin{cases}
+1 \text{  se } x > 0\\
+0 \text{  se } x = 0\\
+-1 \text{  se } x < 0
+\end{cases}$
+\subsection{Funzione mantissa}
+$f: \mathbb{R} \rightarrow \mathbb{R}\\
+x \rightarrow f(x) = x - [x]$
+
+\section{Proprietà}
+\subsection{Monotonia}
+Sia $\mathbb{A} \subseteq \mathbb{X} \subseteq \mathbb{R}$ e $f: \mathbb{X} \rightarrow \mathbb{R}$ funzione detta (nell'insieme $\mathbb{A}$):
+\begin{enumerate}
+\item \textbf{crescente} se $\forall\ x_1,x_2 \in \mathbb{A}$, $x_1<x_2$; $f(x_1) \leq f(x_2)$
+\item \textbf{strettamente crescente} se $\forall\ x_1,x_2 \in \mathbb{A}$, $x_1<x_2$; $f(x_1) < f(x_2)$
+\item \textbf{decrescente} se $\forall\ x_1,x_2 \in \mathbb{A}$, $x_1<x_2$; $f(x_1) \geq f(x_2)$
+\item \textbf{strettamente decrescente} se $\forall\ x_1,x_2 \in \mathbb{A}$, $x_1<x_2$; $f(x_1) > f(x_2)$
+\item \textbf{monotona} Se $f$ crescente oppure decrescente
+\item \textbf{strettamente monotona} Se $f$ strettamente crescente oppure strettamente decrescente
+\end{enumerate}
+\subsubsection{Osservazioni}
+\begin{enumerate}
+\item La somma di due funzioni crescenti è crescente;\\
+La somma di due funzioni decrescenti è decrescente
+\item Il prodotto di due funzioni crescenti non negative è crescente
+\end{enumerate}
+
+\subsection{Parità}
+Sia $\mathbb{X}$ \textbf{simmetrico} rispetto l'origine (cioè: $\forall\ x \in \mathbb{X}$; $-x \in \mathbb{X}$); se $f: \mathbb{X} \rightarrow \mathbb{R}$ allora:
+\begin{enumerate}
+\item[i.] $f$ si dice \textbf{pari} in $\mathbb{X}$ se $f(x) = f(-x)\ \forall\ x \in \mathbb{X}$
+\item[ii.] $f$ si dice \textbf{dispari} in $\mathbb{X}$ se $f(x) = -f(-x)\ \forall\ x \in \mathbb{X}$
+\end{enumerate}
+
+\subsection{Periodicità}
+Sia $\mathbb{X} \subseteq \mathbb{R}$;   $f: \mathbb{X} \rightarrow \mathbb{R}$ si dice \textbf{periodica} di periodo $T>0$ se $T$ è il più piccolo numero reale tale che $x + T \in \mathbb{X}$, $f(x) = f(x + T)$\\
+Ogni intervallo di lunghezza $T$ è detto intervallo di periodicità
+
+\section{Estremi di funzione}
+Sia $f: \mathbb{X} \rightarrow \mathbb{R}$
+\subsection{Positività}
+\begin{enumerate}
+\item $f$ si dice \textbf{positiva} in $\mathbb{A} \subseteq \mathbb{R} \iff f(x)>0\ \forall\ x \in \mathbb{A}$
+\item $f$ si dice \textbf{non negativa} in $\mathbb{A} \subseteq \mathbb{R} \iff f(x) \geq 0\ \forall\ x \in \mathbb{A}$
+\item $f$ si dice \textbf{negativa} in $\mathbb{A} \subseteq \mathbb{R} \iff f(x)<0\ \forall\ x \in \mathbb{A}$
+\item $f$ si dice \textbf{non positiva} in $\mathbb{A} \subseteq \mathbb{R} \iff f(x) \leq 0\ \forall\ x \in \mathbb{A}$
+\end{enumerate}
+\subsection{Limitazione, Massimo assoluto, Minimo assoluto, Estremo superiore e inferiore e caratterizzazione}
+Gli estremi assoluti di $f$ sono gli stessi dell'insieme $f(\mathbb{X}) = Immf$; per le definizioni fare quindi riferimento agli \hyperref[sec: estremiInsiemi]{estremi di insiemi}
+\subsection{Massimo relativo e minimo relativo}
+TBD
+\section{Successioni}
+La funzione $f: \mathbb{N} \rightarrow \mathbb{R}$;  $n \rightarrow f(n) = a_n$ è chiamata successione e scritta anche come: $\{a_n\}_{n \in \mathbb{N}}$
+
+\section{Composizione di funzioni}
+Siano: $f: domf \rightarrow \mathbb{Y}$; $g: domg \rightarrow \mathbb{W}$ due funzioni e $\mathbb{A}=\{x \in domf | f(x) \in domg\}$. Si può allora definire:\\
+\begin{Large}
+$(g \circ f)(x) = g(f(x))$
+\end{Large}\\
+$g \circ f: \mathbb{A} \in \mathbb{W}$\\
+In particolare $\mathbb{A} \subseteq \mathbb{Y}$ ed è sempre definita $g \circ f \restriction _\mathbb{A}$
+\subsubsection{Osservazione}
+$f \circ g \neq g \circ f$
+
+
+\subsection{Proprietà}
+Sia $\mathbb{A} \subseteq dom(g \circ f)$.
+\begin{enumerate}
+\item[i.] $\begin{cases}
+f \text{ crescente in } \mathbb{A}\\
+g \text{ crescente in } f(\mathbb{A})
+\end{cases} \implies g \circ f \text{ crescente}$
+\item[ii.] $\begin{cases}
+f \text{ crescente in } \mathbb{A}\\
+g \text{ decrescente in } f(\mathbb{A})
+\end{cases} \implies g \circ f \text{ decrescente}$
+\item[iii.] $\begin{cases}
+f \text{ decrescente in } \mathbb{A}\\
+g \text{ crescente in } f(\mathbb{A})
+\end{cases} \implies g \circ f \text{ decrescente}$
+\item[iv.] $\begin{cases}
+f \text{ decrescente in } \mathbb{A}\\
+g \text{ decrescente in } f(\mathbb{A})
+\end{cases} \implies g \circ f \text{ crescente}$
+\end{enumerate} 
