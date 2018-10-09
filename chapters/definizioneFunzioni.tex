@@ -90,7 +90,18 @@ x \rightarrow sgn(x) =
 \subsection{Funzione mantissa}
 $f: \mathbb{R} \rightarrow \mathbb{R}\\
 x \rightarrow f(x) = x - [x]$
-
+\subsection{Funzione parte positiva}
+$f_+: \mathbb{X} \rightarrow \mathbb{R}\\
+f_+(x)=\begin{cases}
+f(x) \text{  se } x>0\\
+0 \text{  se } x \leq 0\\
+\end{cases}$
+\subsection{Funzione parte negativa}
+$f_-: \mathbb{X} \rightarrow \mathbb{R}\\
+f_-(x)=\begin{cases}
+-f(x) \text{  se } x<0\\
+0 \text{  se } x \geq 0\\
+\end{cases}$
 \section{Proprietà}
 \subsection{Monotonia}
 Sia $\mathbb{A} \subseteq \mathbb{X} \subseteq \mathbb{R}$ e $f: \mathbb{X} \rightarrow \mathbb{R}$ funzione detta (nell'insieme $\mathbb{A}$):
@@ -167,3 +178,32 @@ f \text{ decrescente in } \mathbb{A}\\
 g \text{ decrescente in } f(\mathbb{A})
 \end{cases} \implies g \circ f \text{ crescente}$
 \end{enumerate} 
+
+\section{Funzione inversa}
+Sia $f: \mathbb{X} \rightarrow \mathbb{Y}$ funzione biettiva $\implies$\\
+\begin{Large}
+$\exists\ f^{-1}: \mathbb{Y} \rightarrow \mathbb{X}$;  $y \rightarrow x = f^{-1}(y)\ |\ f(x) = y$
+\end{Large}\\
+\subsection{Osservazioni}
+\begin{enumerate}
+\item $f^{-1}(f(x))=x\\
+f(f^{-1}(y))=y$
+\item Se $(y,x) \in graph(f^{-1}) \implies f^{-1}(y) = x \implies f(x)=y \implies (x,y) \in graph(f)$\\
+(Il grafico di $f$ e di $f^{-1}$ sono simmetrici rispetto la bisettrice)
+\end{enumerate}
+\subsection{Funzioni goniometriche inverse}
+Siano le funzioni goniometriche:\\
+$sen: [-\frac{\pi}{2};\frac{\pi}{2}] \rightarrow [-1;1]\\
+cos: [0;\pi] \rightarrow [-1;1]\\
+tan: [-\frac{\pi}{2};\frac{\pi}{2}] \rightarrow \mathbb{R}$\\
+Le funzioni inverse sono:\\
+\begin{Large}
+$arcsen: [-1;1] \rightarrow [-\frac{\pi}{2};\frac{\pi}{2}]\\
+arccos: [-1;1] \rightarrow [0;\pi]\\
+arctan: \mathbb{R} \rightarrow [-\frac{\pi}{2};\frac{\pi}{2}]$
+\end{Large}
+
+\subsection{Inversa di monotona}
+Sia $f: \mathbb{X} \rightarrow \mathbb{R}$ e $\mathbb{A} \subseteq \mathbb{X} \subseteq \mathbb{R}$\\
+Se $f$ strettamente monotona in $\mathbb{A} \implies \exists $
+ l'inversa di $f\restriction _\mathbb{A}: f^{-1}: f(\mathbb{A}) \rightarrow \mathbb{R}$
