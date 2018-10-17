@@ -1,0 +1,40 @@
+\chapter{Insiemistica}
+Un insieme \`e una collezione di oggetti i quali sono detti elementi dell'insieme. Un insieme \`e definito se \`e possibile determinare univocamente se un elemento appartiene o no all'insieme. Un insieme viene genericamente indicato con una lettera un stampato maiuscolo, mentre i suoi elementi con lettere minuscole. Se \emph{x} \`e un elemento di E, \emph{x} appartiene ad E, $\emph{x} \in E$, se \emph{x} non appartiene ad E  $\emph{x} \not\in E$.Gli insiemi si possono definire per enumerazione, elencando cio\`e ogni elemento in essi presente o determinando una caratteristica che accomuna tutti gli elementi di tale insieme. L'insieme privo di elementi \`e l'insieme vuoto ($\{\},\emptyset$). Un sottoinsieme \`e un insieme in cui ogni elemento \`e contenuto nell'insieme di cui \`e sottoinsieme. 
+\section{Convenzioni di scrittura degli insiemi}
+\begin{center}
+$E=\{x:\emph{P}(x)\} \wedge \emph{P}(x) = \emph{Q}(x)\wedge\emph{S}(x)\wedge\emph{T}(x) \Rightarrow E=\{x:\emph{Q}(x),\emph{S}(x),\emph{T}(x)\}$\\
+$E=\{x:x \in \emph{P}(x)\wedge\emph{F}(x)\} \Rightarrow  E=\{x\in\emph{P}(x):\emph{F}(x)\}$\\
+\end{center}
+\section{Operazioni tra insiemi}
+\subsection{Unione di insiemi}
+\begin{equation}
+F(E \cup U) = \{ x: x\in E\lor x\in U\}
+\end{equation}
+
+\subsection{Intersezione di insiemi}
+\begin{equation}
+F(E \cap U) = \{ x: x\in E\wedge x\in U\}
+\end{equation}
+
+\subsection{Differenza di insiemi}
+\begin{equation}
+E \backslash F =\{x:x\in E, x\not\in F\}
+\end{equation}
+
+\subsection{Complementare di un insieme E rispetto all'insieme universale X}
+\begin{equation}
+X\backslash E=E^{c}=\{x\in X: x\not\in E\}
+\end{equation}
+\subsection{Alcune propriet\`a di unione e intersezione}
+Le due operazioni sono commutative, associative e distributrive.
+\section{Caratterizzazione di insiemi}
+Se $E \cap U = \emptyset$ E ed F si dicono disgiunti.
+L'insieme delle parti di un insieme, P(E), \`e l'insieme che contiene tutti i sottoinsiemi dell'insieme di partenza, ha cardinalit\`a $2^{n}$, dove n \`e la cardinalit\`a
+dell'insieme di partenza.\\
+Prodotto cartesiano di E e F: $ExF=\{(x,y):x\in E, y\in F\}$, $ExE=E^2$, $RxR=R^2$ viene rappresentato graficamente con il piano cartesiano.
+\section{Leggi di de Morger}
+\begin{gather*}
+E,F \subset X:\\
+(E \cup F)^{c}=E^{c}\cap F^{c}\\
+(E \cap F)^{c}=E^{c}\cup F^{c}
+\end{gather*}

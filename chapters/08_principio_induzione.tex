@@ -1,0 +1,25 @@
+\chapter{Dimostrazione per induzione}
+\section{Definizione di Pn}
+$P_n$ è una proposizione (o affermazione) che dipende da n.
+
+\section{Principio di induzione debole}
+Sia $P_n$ una proposizione definita $\forall\ n>n_0$;  $n,n_0 \in \mathbb{N}$.
+\begin{equation}
+\begin{cases}
+\textit{i. }P_{n_0}\ \text{è vero}\\
+\textit{ii. }\forall\ n>n_0 \text{, supposta vera } P_n \text{ è vera anche } P_{n+1}
+\end{cases} \iff P_n \text{ è vera}
+\end{equation}
+L'affermazione \textit{ii.} è chiamata \textbf{scatto induttivo}.
+
+\section{Principio di induzione forte}
+Sia $P_n$ una proposizione definita $\forall\ n>n_0$;  $n,n_0 \in \mathbb{N}$.
+\begin{equation}
+\begin{cases}
+\textit{i. }P_{n_0}\ \text{è vero}\\
+\textit{ii. }\forall\ n>n_0 \text{, supposte vere } P_{n_0},P_{n_0+1},...,P_n \text{ è vera anche } P_{n+1}
+\end{cases} \iff P_n \text{ è vera}
+\end{equation}
+
+\section{Osservazione}
+Varianti del problema possono porre come incognita anche $n_0$. In questo caso, conviene dimostrare inizialmente \textit{ii.} e poi cercare, fra i risultati ottenuti, il più piccolo numero $n_0 \in \mathbb{N}$ che soddisfi anche \textit{i.} .

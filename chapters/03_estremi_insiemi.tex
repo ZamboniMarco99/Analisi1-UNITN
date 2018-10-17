@@ -1,0 +1,93 @@
+\chapter{Estremi di insiemi}
+\label{sec: estremiInsiemi}
+\section{Intervalli}
+Si definiscono come \textbf{intervalli} alcuni particolari sottoinsiemi di $\mathbb{R}$:
+\begin{equation}
+\begin{gathered}
+$[a, b$] = \{x\in\mathbb{R}: a\le x\le b\ \} \text{ intervallo \textbf{chiuso}}\\
+$(a, b$) = \{x\in\mathbb{R}: a < x < b\} \text{ intervallo \textbf{aperto}}\\
+$(-$\infty$, b$] = \{x\in\mathbb{R}: x\le b\} \text{ intervallo \textbf{illimitato}}\\
+$[a, +$\infty$$) = \{x\in\mathbb{R}: x\ge a\} \text{ intervallo \textbf{illimitato}}\\
+\end{gathered}
+\end{equation}
+\section{Maggiorante}
+Sia $\mathbb{A} \subseteq \mathbb{R}$. Si dice che $\mathbb{A}$ è \textbf{superiormente limitato} se:
+\begin{equation}
+\exists\ M \in \mathbb{R}\ |\ x \leq M\ \forall\ x \in \mathbb{A}
+\end{equation}
+$M$ viene chiamato \textbf{maggiorante}.
+\section{Minorante}
+Sia $\mathbb{A} \subseteq \mathbb{R}$. Si dice che $\mathbb{A}$ è \textbf{inferiormente limitato} se:
+\begin{equation}
+\exists\ m \in \mathbb{R}\ |\ x \geq m\ \forall\ x \in \mathbb{A}
+\end{equation}
+$m$ viene chiamato \textbf{minorante}.
+\section{Massimo}
+Sia $\mathbb{A} \subseteq \mathbb{R}$. $max\mathbb{A}=\bar{x} \in \mathbb{R}$ è \textbf{massimo} di $\mathbb{A}$ se:
+\begin{equation}
+\begin{cases}
+x \leq \bar{x}\ \forall\ x \in \mathbb{A}\\
+\bar{x} \in \mathbb{A}
+\end{cases}
+\end{equation}
+\section{Minimo}
+Sia $\mathbb{A} \subseteq \mathbb{R}$. $min\mathbb{A}=\hat{x} \in \mathbb{R}$ è \textbf{minimo} di $\mathbb{A}$ se:
+\begin{equation}
+\begin{cases}
+x \geq \hat{x}\ \forall\ x \in \mathbb{A}\\
+\hat{x} \in \mathbb{A}
+\end{cases}
+\end{equation}
+\subsection{Osservazioni circa massimo/minimo}
+\begin{enumerate}
+\item [i.] Se $\exists\ max\mathbb{A}$ o $\exists\ min\mathbb{A}$, essi sono \textbf{unici}.
+\item [ii.] $\exists\ max\mathbb{A} \iff \exists\ M \in \mathbb{R}\ |\ x \leq M\ \forall\ x \in \mathbb{A}\\
+\exists\ min\mathbb{A} \iff \exists\ m \in \mathbb{R}\ |\ x \geq m\ \forall\ x \in \mathbb{A}$
+\end{enumerate}
+\section{Estremo superiore}
+Sia $\mathbb{A} \subseteq \mathbb{R}$. Viene definito \textbf{estremo superiore} di A:
+\begin{equation}
+sup\mathbb{A} = min\{M \in \mathbb{R} | x \leq M\ \forall\ x \in \mathbb{A}\}
+\end{equation}
+\subsubsection{Caratterizzazione}
+Sia $\mathbb{A} \subset \mathbb{R}$ superiormente limitato, $s \in \mathbb{R}$:\\
+\begin{equation}
+	s=sup\mathbb{A} \iff
+	\begin{cases}
+	s \geq x\ \forall\ x \in \mathbb{A}\\
+	\forall\ \epsilon > 0\ \exists\ x \in \mathbb{A}\ |\ x > s-\epsilon
+	\end{cases}
+\end{equation}
+\section{Estremo inferiore}
+Sia $\mathbb{A} \subseteq \mathbb{R}$. Viene definito \textbf{estremo inferiore} di A:
+\begin{equation}
+inf\mathbb{A} = max\{m \in \mathbb{R} | x \geq m\ \forall\ x \in \mathbb{A}\}
+\end{equation}
+\subsubsection{Caratterizzazione inf}
+Sia $\mathbb{A} \subset \mathbb{R}$ inferiormente limitato, $t \in \mathbb{R}$:\\
+\begin{equation}
+	t=inf\mathbb{A} \iff
+	\begin{cases}
+	t \leq x\ \forall\ x \in \mathbb{A}\\
+	\forall\ \epsilon > 0\ \exists\ x \in \mathbb{A}\ |\ x < t+\epsilon
+	\end{cases}
+\end{equation}
+
+\section{Osservazioni estermo superiore/inferiore}
+\begin{enumerate}
+\item Se $\exists\ max\mathbb{A} \implies \exists\ supA=max\mathbb{A}\\
+$Se $\exists\ minA \implies \exists\ infA=min\mathbb{A}$
+\item Se $\exists\ sup\mathbb{A}, sup\mathbb{A} \in \mathbb{A} \implies \exists max\mathbb{A} = sup\mathbb{A}$\\
+Se $\exists\ inf\mathbb{A}, inf\mathbb{A} \in \mathbb{A} \implies \exists min\mathbb{A} = inf\mathbb{A}$
+\end{enumerate}
+
+\section{Insiemi finiti}
+Un insieme $\mathbb{A}$ si dice \textbf{finito} se ha un numero finito di elementi.\\
+Se $\mathbb{A} \subset \mathbb{R}$, $\mathbb{A}$ finito, $\mathbb{A} \neq \emptyset \implies \exists\ max\mathbb{A}, min\mathbb{A}$
+
+\label{sec: CompletezzaReali}
+\section{Completezza dell'insieme dei Reali}
+Sia $\mathbb{A} \subset \mathbb{R}$, $\mathbb{A} \neq \emptyset$:
+\begin{center}
+Se $\mathbb{A}$ è limitato superiormente (o inferiormente) $\implies \exists\ sup\mathbb{A} \in \mathbb{R}$ (o $\exists\ inf\mathbb{A} \in \mathbb{R}$)
+\end{center}

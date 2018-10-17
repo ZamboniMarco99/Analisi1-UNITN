@@ -1,0 +1,100 @@
+\chapter{Insiemi numerici}
+$\mathbf{N}=\{0, 1, 2, 3, 4, 5, 6, ... \}$\\
+$\mathbf{Z}=\{ -2, -1, 0, 1, 2, 3, 4, ...\}$\\
+$\mathbf{Q}=\{ \frac{p}{q}, p,q \in \mathbf{Z}, q\ne 0\}$\\
+$\mathbf{R}=\{\mathbf{Q}, \sqrt{2}, \sqrt{2}, \sqrt{3}, \pi, e,\}$\\
+$\mathbf{C}$
+\section{Assiomi algebrici}
+All'interno di $\mathbf{Q}$ valgono i seguenti assiomi per le operazioni di somma($+$) e moltiplicazione($\cdot$).\\
+\subsection{La somma}
+$\mathbf{Q}x\mathbf{Q}\rightarrow\mathbf{Q}$
+\begin{itemize}
+\item $\forall x, y \in \mathbf{Q}, x+y=y+x$
+\item $\forall x, y, z \in \mathbf{Q}, (x+y)+z=x+(y+z)$
+\item $\forall x\in \mathbf{Q} \exists !$ elemento neutro [zero, 0]$: x+0=x$
+\item $\forall x\in \mathbf{Q} \exists !$ opposto di $x=-x : x+(-x)=0$
+\item $\forall x, y, z \in \mathbf{Q}, x+y+z=(x+y)+z$
+\item $\forall x, y \in \mathbf{Q}, x-y=x+(-y)$
+\item $\forall x, y, z \in \mathbf{Q}, x+y=z \Leftrightarrow x=z-y$
+\item La differenza $\forall x, y\in \mathbf{Q}, x-y=x+(-y)$
+\end{itemize}
+\subsection{Il prodotto}
+$\mathbf{Q}x\mathbf{Q}\rightarrow\mathbf{Q}$
+\begin{itemize}
+\item $\forall x, y \in \mathbf{Q}, x\cdot y=y\cdot x$
+\item $\forall x, y, z \in \mathbf{Q}, x\cdot(y\cdot z)=(x\cdot y)\cdot z)$
+\item $\forall x\in \mathbf{Q} \exists !$ elemento neutro [unit\`a, 1] $: x\cdot =x $
+\item $\forall x\ne 0\in \mathbf{Q} \exists !$ reciproco di $x=\frac{1}{x} : x\cdot\frac{1}{x}=1$
+\item La divisione $\frac{x}{y}=x\cdot\frac{1}{y}$  
+\end{itemize}
+\subsection{Ulteriori propriet\`a di somma e prodotto}
+\begin{itemize}
+\item La propriet\`a di collegamento tra somma e prodotto \`e la propriet\`a distributiva: $\forall x, y, z \in \mathbf{Q}, x\cdot(y + z)=x\cdot y+x\cdot z$
+\item $\forall x, y, z \in \mathbf{Q}, x\cdot y=z \Leftrightarrow x=\frac{z}{y}$
+\item $\forall x \in \mathbf{Q}, -(-x)=x$
+\item $\forall x, y \in \mathbf{Q}, (-x)\cdot y=-(x \cdot y)$
+\item $\forall x, y \in \mathbf{Q}, (-x)\cdot (-y)=(x \cdot y)$
+\item $\forall x \in \mathbf{Q}, \frac{1}{\frac{1}{x}}=x$
+\item $\forall x \in \mathbf{Q}, \frac{1}{-x}=-\frac{1}{x}$
+\item Legge di annullamento del prodotto: $\forall x, y \in \mathbf{Q}, x\cdot y=0 \Leftrightarrow x=0 \lor y=0 $
+\end{itemize}
+\section{Ordinamento}
+$\mathbf{Q}$ \`e ordinato secondo la relazione $\le$
+\begin{itemize}
+\item $\forall x\in \mathbf{Q}, x\le x$
+\item $\forall x, y\in \mathbf{Q},[(x\le y)\wedge(x\ge y)] \Rightarrow x=y$
+\item $\forall x, y, z\in \mathbf{Q}, x\le y\le z \Rightarrow x\le z$
+\item $\forall x, y, z \in \mathbf{Q}, x\le y \Rightarrow x+z\le y+z$
+\item $\forall x, y, z \in \mathbf{Q}, x\le y \wedge z\ge 0 \Rightarrow xz\le yz$
+\item $\forall x, \in \mathbf{Q}, x\ge 0 \Rightarrow -x\le 0$
+\item $\forall x, y\in \mathbf{Q}, x\ge y \Rightarrow -x\le -y$
+\item $\forall x, y, z \in \mathbf{Q},x\ge y, z\le 0 \Rightarrow xz\le yz$
+\item $\forall x, y \in \mathbf{Q}, x\ge y \ge 0 \Rightarrow \frac{1}{x}\le\frac{1}{y}$
+\item $\forall x\ne 0 \in \mathbf{Q}, x^2\ge 0$
+\item $\forall x, y \in \mathbf{Q}, x<y \Leftrightarrow x \le y \wedge x\ne y$
+\end{itemize}
+\subsection{Propriet\`a densit\`a in Q}
+$\forall x, y \in \mathbf{Q}, x <y, \exists z \in \mathbf{Q} : x<z<y $ 
+\subsubsection*{Dimostrazione}
+Per dimostrare la propriet\`a di densit\`a in$\mathbb{Q}$, si considera la media tra i due numeri $z$; successivamente si fa la media tra il numero $z$ e uno dei due estremi
+e ancora la media tra questo nuovo numero e il numero trovato all'infinito:
+\begin{gather*}
+z_1=\frac{x+y}{2},\\
+z_2=\frac{x+z_1}{2},\\
+\cdot,\\
+\cdot,\\
+\cdot,\\
+z_n=\frac{x+z_{n-1}}{2}\rightarrow z_n\in\mathbb{Q}
+\end{gather*}
+\subsection{Propriet\`a archimedea in Q}
+$\forall x, y \in \mathbb{Q}, x, y>0 \exists n \in \mathbb{Q}:y\le nx$
+\subsubsection*{Dimostrazione}
+\begin{itemize}
+\item Se $y\le x\Rightarrow n=1$
+\item Se $y>x, x=\frac{p}{q}, y=\frac{r}{s}, p,q,r,s\in\mathbb{N}\backslash\{0\}\Rightarrow \frac{r}{s}\le r\le rp, rp=\frac{p}{q}qr$
+\end{itemize}
+\subsubsection{Corollario}
+\begin{equation}
+\forall x \in \mathbb{Q}, x>0 \exists n \in \mathbb{N}: x>\frac{1}{n}
+\end{equation}
+\subsection{Teorema dell'incompletezza di Q}
+L'equazione $x^2=2$ non ha soluzioni in $\mathbb{Q}$:
+\begin{equation}
+\forall x \in \mathbb{Q}, [x>o \Rightarrow x^2\ne 2]
+\end{equation}
+\subsubsection*{Dimostrazione}
+Si consideri vera la negazione: $\exists x\in\mathbb{Q}:[x>0\wedge x^2=2]$.
+\begin{gather*}
+x=\frac{p}{q},p,q\in \mathbb{N}\:primi\,tra\,loro:\\
+\frac{p^2}{q^2}=2\Leftrightarrow p^2=2q^2\Rightarrow p^2\:pari \Rightarrow p \: pari\\
+\exists m\in\mathbb{N}:p=2m \Rightarrow 4m^2=2q^2\Rightarrow 2m^2=q^2\Rightarrow q^2\:pari\rightarrow q\:pari
+\end{gather*}
+Dovendo essere per ipotesi p e q primi tra loro giungo ad un assurdo e pertanto il teorema \`e dimostrato
+\section{I numeri reali}
+I numeri reali sono un insieme numerico per cui valgono gli stessi assiomi algebrici e di ordinamento rispetto a $\mathbb{Q}$, ma inoltre possiede l'assioma di continuit\`a.
+Definendo $A \subset \mathbb{R} \wedge B \subset \mathbb{R}$, si dice che A sta a sinistra di B se $\forall a \in A, \forall b \in B, a\le b$. L'assioma di continuit\`a dice
+che se A sta a sinistra di B, $\exists c: c\le a \forall a \in A \wedge c\ge b \forall b \in B$. Si pu\`o considerare anche come $\mathbb{Q}$ a cui siano stati aggiunti i 
+numeri illimitati non periodici, o numeri irrazionali ($\mathbb{R}\backslash\mathbb{Q}$).\\
+\subsection{I teoremi di densit\`a}
+$\forall x, y \in \mathbb{R}, x<y, \exists\: infinito\: z\in \mathbb{Q}: x<z<y$\\
+$\forall x, y \in \mathbb{R}, x<y, \exists \:infinito\: z\in \mathbb{R}\backslash\mathbb{Q}: x<z<y$
