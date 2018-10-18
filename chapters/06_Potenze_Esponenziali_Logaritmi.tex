@@ -1,0 +1,62 @@
+\chapter{Potenze, esponenziali, logaritmi}
+\section{Potenze}
+\subsection{Propriet\`a}
+\begin{itemize}
+\item $x^n\cdot x^m =x^{m+n}$
+\item $(x^n)^m=x^{m\cdot n}$
+\item $(xy)^n=x^n\cdot y^n$
+\end{itemize}
+\subsection{Potenze ad esponente intero positivo $x^n$}
+$\forall x \in \mathbf{R}$
+\begin{itemize}
+\item$x^2=x\cdot x$
+\item$x^3=x\cdot x\cdot x$
+\item$x^n=x^{n-1}\cdot x$
+\item$x^n \ge 0 \forall x \in \mathbf{R}$, n pari.
+\item$x^n \le 0 \forall x \in \mathbf{R^-}$, n dispari.
+\end{itemize}
+Se n \`e 2, $\forall x_1, x_2, \in \mathbf{R}, 0<x_1<x_2 \Rightarrow {x_1}^2 < {x_2}^2$. Si dimostra moltiplicando prima per $x_1$ e poi per $x_2$ e confrontando le due 
+equazioni: $\cdot x_1= x_1\cdot x_1 < x_2\cdot x_1$,\\ $\cdot x_2= x_1\cdot x_2 < x_2\cdot x_2 $,\\ essendo $x_1\cdot x_2 < x_2\cdot x_1$,\\ ottengo che $x_1\cdot x_1 < x_2\cdot x_2 \Rightarrow {x_1}^2 < {x_2}^2$.\\ Se $x_1<x_2<0 \Rightarrow {x_1}^2 > {x_2}^2 $.\\ Se n\`e 3 $x_1<x_2 \Rightarrow  {x_1}^3 < {x_2}^3$
+\subsection{Potenze ad esponente intero negativo $x^-n$}
+$\forall x \in \mathbf{R}\backslash \{0\}$\\
+$x^{-n}=\frac{1}{x^n}$
+\subsection{Potenze ad esponente frazionario $x^\frac{1}{n}$}
+\subsubsection{Esistenza della radice n-esima}
+Sia $y \in \mathbf{R}, y\ge 0, n \in \mathbf{N}n n\ge 1 \Rightarrow \exists ! x \in \mathbf{R}, x \ge 0: x^n=y$.\\
+x \`e indicato come $y^\frac{1}{n}$ no $\sqrt[n]{y}$\\
+$\sqrt[n]{y}=sup\{a \in [0, +\infty[:a^n\le y\}$
+\subsection{Potenze ad esponente razionale $y^q$}
+$\forall x \in \mathbf{R}, x\ge 0, x^q\doteq (x^\frac{1}{n})^m=(x^m)^\frac{1}{n}, \forall q=\frac{m}{n}, m,n \in \mathbf{N}, n\neq 0$
+\\
+Si consideri $x \in \mathbf{R^+}, x=a$, mentre gli esponenti $q, r, s \in \mathbf{Q}$. \`E ben definito $a^r, r\in \mathbf{Q}$. Dalle propriet\`a delle potenze segue che
+$\forall a, b \in \mathbf{R^+}, \forall r,s \in \mathbf{Q}$ esse si conservano, inoltre $a^r>0$,$a^0=1$\\
+Se $(a>1 \wedge r>0)\lor(0<a<1 \wedge r<0), r<s\Leftrightarrow a^r<a^s$\\
+Se $(0<a<1 \wedge r>0)\lor(a>1 \wedge r>0), r<s\Leftrightarrow a^r>a^s$\\
+$\forall a\neq 1 a^r=a^s\Rightarrow r=s$
+\section{Esponenziali $a^x$}
+$a^x, a>1, x \in \mathbf{R}, x<0, x=p,\alpha_1\alpha_2\alpha_3\alpha_4, a^x\dot{=}sup\{a^{p,\alpha_1\alpha_2\alpha_3\alpha_4}\}$\\
+Se $0<a<1, x\in \mathbf{R^+}, a^x\dot{=}\frac{1}{(\frac{1}{a})^x}$\\
+Se $a>0, a\neq 1, x \in \mathbf{R^-}, a^x\dot{=}\frac{1}{a^{-x}}$\\
+Rimangono soddisfatte tutte le propriet\`a elencate per $a^x$ con $x\in\mathbf{Q}$
+\section{Logaritmi $\log_a x$}
+Si intende per logaritmo la soluzione dell'equazione: $a^x=y, y\in \mathbf{R^+}$. La soluzione x si chiama algoritmo in base a di y ($x=\log_a y$). 
+\subsection{Esistenza del logaritmo}
+$a\in \mathbf{R}, a>0, a\neq 1, y\in \mathbf{R^+}\Rightarrow\exists!x\in\mathbf{R}:a^x=y$.\\
+La dimostrazione si basa sull'esistenza dell'estremo superiore e procede in maniera analoga all'esistenza della radice n-essima,
+\subsection{Propriet\`a}
+\begin{itemize}
+\item $a^{\log_a y}=y,\forall y>0$
+\item $\log_a a =1$
+\item $\log_a(x_1\cdot x_2)=\log_a x_1 + \log_a x_2 \forall x_1, x_2 \in \mathbf{R}$
+\item $\log_a(\frac{x_1}{x_2})=\log_a x_1 - \log_a x_2 \forall x_1, x_2 \in \mathbf{R}$
+\item $\log_a a^{\alpha} =\alpha\log_a a, \forall x>0, \alpha \in \mathbf{R}$
+\item $\log_a a^x =x \forall x\in \mathbf{R}$
+\item $\log_a 1 =0$
+\item $\log_a x =-\log_{\frac{1}{a}} x$
+\item Cambio di base: $\log_b x=\frac{\log_a x}{\log_a b}$
+\item $0<x_1<x_2$
+\begin{itemize}
+\item $\Leftrightarrow \log_a x_1<\log_a x_2, a>1$
+\item $\Leftrightarrow \log_a x_1>\log_a x_2, 0<a<1$
+\end{itemize}
+\end{itemize}

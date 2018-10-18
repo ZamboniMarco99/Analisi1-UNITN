@@ -1,0 +1,46 @@
+\chapter{Elementi di logica}
+Si dice proposizione ogni frase che d\`a informazioni ed \`e possibile dichiarare univocamente se \`e vera o falsa, se contiene un'informazione sola viene detta proposizione
+atomica. Le proposizioni vengono indicate attraverso lettere corsive maiuscole. Quando si utilizzano pi\`u proposizioni \`e utile tracciarne le tabelle di verit\`a:
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\textit{A} & \textit{B} \\
+\hline
+V & V \\
+V & F \\
+F & V \\
+F & F \\
+\hline
+\end{tabular}
+\end{center}
+Due proposizioni sono equivalenti (o equipollenti) quando hanno lo stesso valore di verit\`a, cio\`e la stessa tabella di verit\`a. Le proposizioni composte sono proposizioni 
+formate da pi\`u proposizioni atomiche collegate dai connettori logici. Il valore di verit\`a di queste proposizioni \`e determinato dalle proposizioni di partenza. I 
+connetttori logici sono 5: non (negazione $\neg$), e (congiunzione $\wedge$), o (disgiunzione $\lor$), se...allora (implicazione materiale $\Rightarrow$), se e solo se (doppia implicazione $\Leftrightarrow$). Le tabelle di verit\`a delle congiunzioni logiche sono:
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textit{A} & \textit{B} & $\neg$\textit{A} & \textit{A} $\wedge$ \textit{B} & \textit{A} $\lor$ \textit{B} & \textit{A} $\Rightarrow$ \textit{B} & \textit{A} $\Leftrightarrow$ \textit{B}\\
+\hline
+V & V & F & V & V & V & V\\
+V & F & F & F & V & F & F\\
+F & V & V & F & V & V & F\\
+F & F & V & F & F & V & V\\
+\hline
+\end{tabular}
+\end{center}
+L'implicazione \`e una relazione di causa-effetto tra la prima e la seconda proposizione: se si verifica la prima deve verificarsi la seconda e se la seconda \`e vera \`e 
+vera anche la prima. La prima \`e condizione sufficiente per la seconda, mentre la seconda \`e condizione necessaria per la prima. Nel caso della doppia implicazione entrambe 
+sono condizioni necessarie e sufficienti per entrambe. Propriet\`a dei connettori logici: per $\wedge$ e $\lor$ valgono le propriet\`a commutativa, distributiva ed
+associativa. 
+\begin{center}
+$\neg$($\neg$\textit{A}) \`e equivalente ad \textit{A}\\
+$\neg$(\textit{A}$\wedge$\textit{B}) \`e equivalente a ($\neg$\textit{A})$\lor$($\neg$\textit{B})\\
+$\neg$(\textit{A}$\lor$\textit{B}) \`e equivalente a ($\neg$\textit{A})$\wedge$($\neg$\textit{B})\\
+\textit{A} $\Rightarrow$ \textit{B} \`e equivalente a ($\neg$\textit{A})$\lor$\textit{B}\\ 
+$\neg$(\textit{A} $\Rightarrow$ \textit{B}) \`e equivalente a \textit{A}$\wedge$($\neg$\textit{B})\\ 
+\textit{A}$\Leftrightarrow$\textit{B} \`e equivalente a (\textit{A} $\Rightarrow$ \textit{B})$\wedge$(\textit{B} $\Rightarrow$ \textit{A})\\
+\textit{A} $\Rightarrow$ \textit{B} \`e equivalente a ($\neg$\textit{B}) $\Rightarrow$ ($\neg$\textit{A})
+\end{center}
+Una tautologia \`e una porposizione composta sempre vera indipendentemente dai valori di verit\`a delle proposizioni che la costituiscono: [\textit{P}$\wedge$(\textit{P}$\Rightarrow$\textit{Q})]$\Rightarrow$\textit{Q}. Se \textit{P} \`e vera e si vuole dimostrare che \textit{Q} \`e vera, basta dimostrare che \textit{P}$\Rightarrow$\textit{Q} sia vera.\\
+Un predicato \`e una frase contenente una o pi\`u variabili che diventa una proposizione una volta che le variabili sono fissate. 
+Un predicato pu\`o essere trasformato in una proposizione anche attraverso i quantificatori per ogni ($\forall$), esiste almeno uno($\exists$), esiste solo uno ($\exists !$). Se in un predicato vengono usati entrambi i quantificatori, cambiandone l'ordine cambia il significato della proposizione.
