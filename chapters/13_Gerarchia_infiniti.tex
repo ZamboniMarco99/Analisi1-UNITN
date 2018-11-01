@@ -1,0 +1,92 @@
+\chapter{Gerarchia degli infiniti}
+Per $x\rightarrow+\infty$: \\
+\begin{center}
+$|\log_b x|^\alpha<<x^\beta<<a^x$
+\end{center}
+\section{Osservazioni}
+\begin{itemize}
+\item $\lim\limits_{x\rightarrow+\infty}\frac{x^\beta}{a^x}=0$
+\item $\lim\limits_{x\rightarrow+\infty} \frac{|\log_b x|^\alpha}{x^\beta}=0$
+\item $\lim\limits_{x\rightarrow-\infty} a^x|x|^\beta=0$
+\item $\lim\limits_{x\rightarrow 0^+} x^\beta|\log_b x|^\alpha=0$
+\end{itemize}
+Gli ultimi due si dimostrano con cambio di variabile in modo che il limite tenda a $+\infty$.
+\section{Dimostrazione}
+Si provi che $\lim\limits_{x\rightarrow+\infty}\frac{x}{4^x}=0$.\\
+Dal grafico si nota che $2^x\ge x\forall x\ge 0$\\
+$2^x\ge 2^{[x]}=(1+1)^{[x]}\ge 1+[x]$(per la disuguaglianza di Bernoulli).\\
+$1+[x]\ge 1+x-1$\\
+Ovvero $2^x\ge x$\\
+$0<\frac{x}{4^x}=\frac{x}{2^x2^x\le \frac{1}{2^x}}$\\
+Essendo che per $x\rightarrow +\infty$ o e $\frac{1}{2^x}$ tendono a 0,\\
+$\lim\limits_{x\rightarrow+\infty}\frac{x}{4^x}=0$.\\
+Per dimostrare che $\lim\limits_{x\rightarrow+\infty}\frac{x^\beta}{a^x}=0$\\
+Si osservi che $a^x=4^{\log_4 a^x}$.\\
+Perci\`o: $\frac{x^\beta}{a^x}=(\frac{x}{4^{x\frac{\log_4 a}{\beta}}})^\beta$\\
+Ponendo $y=x4^{\frac{\log_4 a}{\beta}}$\\
+$(\frac{y\beta}{\log_4 a}\frac{1}{4^y})^\beta$\\
+$(\frac{\beta}{\log_4 a}\frac{y}{4^y})^\beta$\\
+Si osserva che la prima frazione \`e una costante, mentre la seconda \`e il limite dimostrato all'inizio della sezione, pertanto:\\
+$\lim\limits_{x\rightarrow+\infty}\frac{x^\beta}{a^x}=0$.\\
+Partendo da questa dimostrazione si dimostra che $\lim\limits_{x\rightarrow+\infty} \frac{|\log_b x|^\alpha}{x^\beta}=0$, sostituendo x con $y=\log_b x$
+\section{Altre forme indeterminate}
+$\lim\limits_{x\rightarrow x_0} f(x)^{g(x)}, f(x)>0$, $f(x)^{g(X)}=e^{\log f(x)\cdot g(x)}$
+\begin{itemize}
+\item $0^0$
+\item $\infty^0$
+\item $1^\infty$
+\end{itemize}
+Per calcolare i primi due gerarchie degli inifiniti, mentre il terzo ci saranno dei limiti notevoli:
+\begin{itemize}
+\item $\lim\limits_{x\rightarrow 0}\frac{e^x-1}{x}=1$
+\item $\lim\limits_{x\rightarrow 0}\frac{\log (x+1)}{x}=1$
+\end{itemize}
+\subsection{Limiti di successioni-esercizi}
+$\lim\limits_{n\rightarrow +\infty}\sqrt[n]{n}=1$\\
+$\lim\limits_{n\rightarrow +\infty}\sqrt[n]{n\log n}=1$ Osservazione: $1\le\log n\le n\Leftrightarrow n\le n\log n\le n^2\Leftrightarrow \sqrt[n]{n}\le\\sqrt[n]{nlog n} \le \sqrt[n]
+{n^2}$\\
+$\lim\limits_{n\rightarrow +\infty}\frac{n^\alpha}{a^n}=0\forall\alpha\in\mathbb{R}$\\
+$\lim\limits_{n\rightarrow +\infty}\frac{{|\log_b n|}^{\alpha}}{n^{\beta}}=0\forall b>0,\neq 1,\forall\beta>0$\\
+$\lim\limits_{n\rightarrow +\infty}\frac{a^n}{n!}=0\forall a>0$
+\subsection{Gerarchia di infiniti per le successioni}
+$\log_b n <<n^\alpha<<a^n<<n!<<n^n$
+\subsubsection{Formula di Stirling}
+$n!$\textasciitilde$(\frac{n}{e})^n\sqrt{2\pi n}$
+\subsubsection{Il numero di Nepero $e$}
+la successione $a_n=(1+\frac{1}{n})^n$ \`e strettamente crescente e limitata.\\
+Per dimostrare che sia crescente considero $\frac{a_n}{a_{n-1}}<1$\\
+$\frac{(1+\frac{1}{n})^n}{(1+\frac{1}{n-1})^{n-1}}=$\\
+$(\frac{n+1}{n})^n(\frac{n-1}{n})^{n-1}=\frac{(\frac{n+1}{n})^n(\frac{n+1}{n})^n}{\frac{n-1}{n}}=$\\
+$=\frac{(\frac{n^2-1}{n^2})^n}{(1-\frac{1}{n})}=$\\
+$=\frac{(1-\frac{1}{n^2})^n}{(1-\frac{1}{n})}$\\
+Che per la disuguaglianza di Bernoulli con $c=\frac{1}{n^2}$\\
+$>\frac{1-\frac{1}{n}}{1-\frac{1}{n}}=1$.\\
+Ossia $a_n>a_{n-1}$, la funzione \`e crescente.\\
+Per dimostrare che \`e limitata considero:\\
+$2\le (1+\frac{1}{n})^n\le (1+\frac{1}{n})^{n+1}\le 4$\\
+Si dimostra, sempre utilizzando Bernoulli che il terzo termine \`e decrescente, pertanto:\\
+$2\le (1+\frac{1}{n})^n\le 4$\\
+Dal teorema dell'esistenza del limite per funzioni monotone determiniamo che esiste il limite finito:\\
+$e\dot{=}\lim\limits_{x\rightarrow +\infty} (1+\frac{1}{n})^n$ che \`e l'estremo superiore.
+\subsubsection{Corollario}
+\begin{itemize}
+\item $\lim\limits_{x\rightarrow+\infty} (1+\frac{1}{x})^x=e$
+\item $\lim\limits_{x\rightarrow-\infty} (1+\frac{1}{x})^x=e$
+\item $\lim\limits_{f(x)\rightarrow 0} (1+f(x))^\frac{1}{f(x)}=e$
+\end{itemize}
+Per dimostrare basta osservare che $\forall x\in\mathbb{R}, [x]\le x\le [x]+1:(1+\frac{1}{[x]+1})^{[x]}\le(1+\frac{1}{x})^x\le(1+\frac{1}{[x]})^{[x]+1}$. Gli estremi tendono
+a $e$, pertanto per il teorema del confronto anche il secondo. Il secondo e terzo corollario si dimostrano in maniera analoga sostituendo la variabile rispettivamente con
+$y=-x$ e con $y=\frac{1}{x}$.
+\subsubsection{Corollario 2}
+\begin{itemize}
+\item $\lim\limits_{x\rightarrow 0} \frac{\log (1+x)}{x})=1$
+\item $\lim\limits_{x\rightarrow 0} \frac{e^x-1}{x})=1$
+\end{itemize}
+Per dimostrarli bisogna considerare la continuit\`a del logaritmo e che $\frac{\log (1+x)}{x})=\log (1+x)^{\frac{1}{x}}$
+\subsubsection{Corollario 3}
+\begin{itemize}
+\item $\lim\limits_{x\rightarrow 0} \frac{a^x-1}{x})=\log a$
+\item $\lim\limits_{x\rightarrow\pm\infty} (1+\frac{\alpha}{x})^x=e^\alpha$
+\item $\lim\limits_{x\rightarrow 0} (1+\alpha x)^\frac{1}{x}=e^\alpha$
+\end{itemize}
+Si utilizzano gli altri limiti notevoli considerando la x come una funzione continua.

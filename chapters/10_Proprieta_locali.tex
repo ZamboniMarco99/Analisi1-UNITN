@@ -1,0 +1,33 @@
+\chapter{Propriet\`a locali di una funzione}
+\section{La vicinanza a un punto}
+\subsection{La distanza}
+
+La distanza in $\mathbb{R}$ \`e definita da $d(x, y)\dot{=}|x-y|,\forall x,y\in]\mathbb{R}, d(x, y)\ge 0, d(x,y)=0\Leftrightarrow x=y, d(x, y)=d(y, x), d(x, y)\le d(x,z)
++d(z,y)$, 
+\section{L'intorno}
+Fissati $x_0\in\mathbb{R}, \epsilon>0$, chiameremo intorno (sferico) di centro $x_0$ e raggio $\epsilon$, l'intervallo $]x_0-\epsilon; x_0+\epsilon[=\{x\in\mathbb{R}:d(x, x_0)<\epsilon\}$ $I_{x_0}$ \`e l'insieme degli intorni sferici di $x_0$ indicati come U, V, W.
+\section{Estremi locali di una funzione}
+$f:X\subset\mathbb{R}\rightarrow\mathbb{R},x_0\in X$, $x_0$ si dice punto di minimo locale di $f$ e $f(x_0)$ minimo locale se $\exists U\in I_{x_0}: f(x_0)\le f(x) \forall x\in U\cap X$, se manca l'uguale si dice punto di minimo locale stretto o forte per $f$, analogamente per il massimo.
+\subsection{I numeri reali estesi}
+Non \`e un insieme numerico $\bar{\mathbb{R}}\dot{=}\mathbb{R}\cup\{-\infty;+\infty\}$. 
+\begin{itemize}
+\item $-\infty<x<+\infty$
+\item $x\pm\infty=\pm\infty$
+\item $x\cdot \pm\infty=\pm\infty, x>0$ 
+\item $x\cdot \pm\infty=\mp\infty, x<0$
+\item Non \`e definita $+\infty-\infty$
+\item Non \`e definita $0\cdot\pm\infty$
+\item Non \`e definita $\frac{0}{0}$
+\item Non \`e definita $\frac{\infty}{\infty}$
+\end{itemize}
+\subsection{Intorni sferici di $\pm\infty$}
+Si dice intorno sferico di $+\infty$ qualunque semiretta $]M;+\infty[=\{ x\in\mathbb{R}:x>M\}$\\
+Si dice intorno sferico di $-\infty$ qualunque semiretta $]M;-\infty[=\{x\in\mathbb{R}:x<M\}$\\
+In $\bar{\mathbb{R}}$, l'insieme degli intorni $I_{x_0} $\`e dato da $I_{x_0}=\begin{cases}-\infty\\x_0\in\mathbb{R}\\+\infty\end{cases}$%Aggiungi rette
+\subsection{Punto di accumulazione}
+Sia $A\subset\mathbb{R}$; si dice che $x_0\in\bar{\mathbb{R}}$ \`e un punto di accumulazione per A se ogni intorno di $x_0$ contiene un punto di A diverso da $x_0$.\\
+$\forall U\in I_{x_0}$ si ha $(U\backslash\{x_0\}\cap A\neq \emptyset$. In ogni intorno U di un punto di accumulazione cadono infiniti punti di A.\\
+Unico punto di accumulazione in $\mathbb{N}$ \`e $+\infty$.\\
+In ogni intorno U di un punto di accumulazione cadono infiniti punti di A.
+\subsection{Punto isolato}
+Un punto $x_0\in A$ che non \`e un punto di accumulazione per A si dice punto isolato, ossia $x_0\in A$ \`e isolato se $\exists U\in I_{x_0}:U\cup A=\{x_0\}$.\\ 

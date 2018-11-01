@@ -1,0 +1,152 @@
+\chapter{I limiti}
+Esempi di definizione di limiti:
+\begin{itemize}
+\item $\lim\limits_{x\rightarrow x_0}f(x)=n\Leftrightarrow\forall \epsilon>0, \exists \delta<0: \forall x\in domf, 0<|x-x_0|<\epsilon\Rightarrow |f(x)-n|<\delta$\\
+\item $\lim\limits_{x\rightarrow -\infty}f(x)=+\infty\Leftrightarrow\forall M>0, \exists k<0: \forall x\in domf, x<k\Rightarrow f(x)>M$\\
+\item $\lim\limits_{x\rightarrow n}f(x)=+\infty\Leftrightarrow\forall M>0, \exists \delta<0: \forall x\in domf, 0<|x-n|<\delta\Rightarrow f(x)>M$\\
+\end{itemize}
+\section{Definizione unificata di limite}
+$X\subset\mathbb{R}, f:X\rightarrow\mathbb{R}$, funzione, sia $x_0\bar{\mathbb{R}}$ punto di accumulazione per X. Allora $l\in\bar{\mathbb{R}}$ si dice limite per $f(x)$, per 
+$x$ tendente a $x_0$, $\lim\limits_{x \rightarrow x_0}=l$ se $\forall V$, intorno di $l$, $\exists$ un intorno $U$ di $x_0$ tale che $\forall x\in (U\cap X)\backslash\{x_0\}$ si ha $f(x)\in V$. Non viene espresso il comportamendo di $f$ in $x_0$ quando $x\rightarrow x_0$, $f$ pu\`o anche non essere definita in $x_0$
+\subsection{Casi particolari}
+$\lim\limits_{x\rightarrow -\infty} f(x)=+\infty$, intorni di $l=+\infty$ sono $]M,+\infty[$ con $M>0$.\\
+Intorni di $x_0=-\infty$ sono $]-\infty,k[$ con $k<0$\\
+Quindi $\forall M>0, \exists k<0:\forall x\in ]-\infty,k[\cap X$,\\
+si ha $f(x)\in ]M,+\infty[$\\
+$\Leftrightarrow \forall M>0, \exists k<0:\forall x\in X, x<k\Rightarrow f(x)>M$\\
+$\lim_{x\rightarrow 2} f(x)=1$ intorni di 1 sono $]1-\epsilon;1+\epsilon[ (\epsilon>0)$, gli intorni di 2 sono $]2-\delta;2+\delta[(\delta>0)$. Quindi $\forall\epsilon>0, 
+\exists \delta>0:\forall x\in X, |x-2|<\delta$ si ha $|f(x)-1|<\epsilon$.\\
+\subsection{Note}
+\begin{itemize}
+\item U dipende da V
+\item $x_0$ non deve appartenere al dominio della funzione, se appartiene non \`e detto che il limite sia uguale a $f(x_0)$
+\item Se $l\in\mathbb{R}$ si dice che $f$ ammette limite finito per $x\rightarrow x_0$
+\item $\lim\limits_{x\rightarrow x_0} f(x)=l\Leftrightarrow \lim\limits_{x\rightarrow x_0} (f(x)-l)=0$
+\item $\lim\limits_{x\rightarrow x_0} f(x)=0 \Leftrightarrow\lim\limits_{x\rightarrow x_0} |f(x)|=0$
+\item $l\neq 0$, pu\`o essere che $\nexists\lim\limits_{x\rightarrow x_0} f(x)$ ma $\exists \lim\limits_{x\rightarrow x_0} |f(x)|=l$
+\end{itemize}
+\section{Limitatezza}
+Se una funzione ha limite finito, nell'intorno di $x_0$ la funzione \`e limitata.\\
+$\lim\limits_{x\rightarrow x_0} f(x)=l\in\mathbb{R}$ allora $f$ \`e limitata in un intorno di $x_0$. 
+\section{Teoremi generali}
+\subsection{Unicit\`a del limite}
+Se esiste il limite $\lim\limits_{x\rightarrow x_0} f(x)$ allora esso \`e unico.\\
+\subsubsection{Dimostrazione}
+Supponiamo per assurdo che esistano due limiti distinti:
+\begin{center}
+$\lim\limits_{x\rightarrow x_0} f(x)=l_1\neq l_2=\lim\limits_{x\rightarrow x_0} f(x)$
+\end{center}
+Esistono due intorni $V_1$ di $l_1$ e $V_2$ di $l_2$ tali che $V_1\cap V_2=\emptyset$. D'altra parte per definizione di limite, esistono due intorni $U_1$ di $x_0$ e $U_2$
+di $x_0$  tali che 
+\begin{center}
+$f(x)\in V_1 \forall x\in (U_1\cap X)\backslash\{x_0\}$\\
+$f(x)\in V_2 \forall x\in (U_2\cap X)\backslash\{x_0\}$
+\end{center}
+Allora per $x\in (U_1\cap U_2)\cap X\backslash\{x_0\}\Rightarrow f(x)\in V_1\cap V_2$ che contraddice il fatto che $V_1\cap V_2=\emptyset$.
+\subsubsection{Dimostrazione}
+Si fissi $\epsilon=1$. Allora $\exists U$ intorno di $x_0$: $\forall x\in U\cap domf\backslash\{x_0\}$ si ha $|f(x)-l|<\epsilon$ pertanto localmente \`e limitata in quanto
+si trova ad una distanza finita $\epsilon$.
+\subsection{Permanenza del segno}
+Se una funzione ha limite positivo.
+Sia $X\subset\mathbb{R}, f:X\rightarrow\mathbb{R}, x_0\in\bar{\mathbb{R}}$ punto di accumulazione, $l\in\bar{\mathbb{R}}$ allora esiste un intorno U tale che $f(x)>0$.
+$\forall x\in U\cap X\backslash\{x_0\}$.
+\subsubsection{Dimostrazione}
+Supponiamo $l\in\mathbb{R},>0$. Nella definizione di limite consideriamo $\epsilon=\frac{l}{2}>0$ allora esiste U intorno di $x_0$ tale che $|f(x)-l|<\frac{l}{2}\forall x\in U\cap x\backslash\{x_0\}$. $0<\frac{l}{2}<f(x)<\frac{3l}{2}$.
+Analogalmente per infinito e l negativo.
+\subsubsection{Note}
+Non vale il viceversa: $f(x)=x^2>0 \forall$ intorno U di $x_0$ ma $\lim\limits_{x\rightarrow 0} f(x)=0$
+\section{Esistenza del limite}
+Il limite non esiste sempre, per esempio $\lim\limits_{n\rightarrow +\infty} (-1)^n=0$
+\section{Punto di accumulzione sinistro e destro}
+$x_0\in\mathbb{R}$ si dice punto di accumulazione sinistro (destro) per X se $x_0$ \`e un punto di accumulazione per $X\cap]-\infty;x_0[$ ($X\cap]-\infty;x_0[$)
+\subsection{Intorno sinistro e destro}
+Insiemi fatti da intervallo $]x_0-\epsilon;x_0[$, ($]x_0;x_0-\epsilon[$). Intorno sferico unione di intorno destro, sinistro e $x_0$.
+\section{Teorema del confronto (dei due carabinieri)}
+Siano $f,g,: X\rightarrow\mathbb{R}, x_0\in\bar{\mathbb{R}}$ punto di accumulazione per X.\\
+$f(x)\le g(x)\le h(x), \forall x\in U\cap X\backslash\{x_0\}$ e se $\lim\limits_{x \rightarrow x_0} f(x)=\lim\limits_{x \rightarrow x_0} h(x)=l\in\bar{\mathbb{R}}$ allora $\lim\limits_{x \rightarrow x_0} g(x)=l$\\
+Se $l=+\infty$ allora basta che $f(x)\le g(x)$\\
+Se $l=-\infty$ allora basta che $f(x)\ge g(x)$\\
+Il teorema del confronto si usa per studiare limiti di prodotti tra una funzione generale e una limitata ma il cui limite in tale punto non esiste.\\
+$\lim\limits_{x\rightarrow 0} |x|^\alpha \sin\frac{1}{x}=0$\\
+$\lim\limits_{x\rightarrow 0}\frac{1}{x}$ non esiste. Esiste con la x in modulo in quanto garantisce la costanza del segno nell'intorno.
+\section{Forme ideterminate}
+Una forma per cui non si pu\`o conoscere a priori il valore del limite.
+\begin{itemize}
+\item $+\infty-\infty$
+\item $o\cdot\pm\infty$
+\item $\frac{\infty}{\infty}$
+\item $\frac{0}{0}$
+\item $0^0$
+\item $1^{\infty}$
+\item $\infty^0$
+\end{itemize}
+\subsection{$\infty-\infty$}
+\`E una forma indeterminata perch\`e consideriamo $x\rightarrow +\infty$
+\\
+\begin{tabular}{|c|c|c|}
+\hline
+$f(x)$ & $g(x)$ & $\lim\limits_{x\rightarrow +\infty} (f(x)+g(x))$\\
+\hline
+$x$ & $-\frac{x}{2}$ & $+\infty$\\
+\hline
+$x$ & $-2x$ & $-\infty$\\
+\hline
+$x$ & $-x+k$ & $k$\\
+\hline
+$x$ & $-x+\sin x$& $!\exists$\\ 
+\hline
+\end{tabular}
+\subsection{$\frac{\infty}{\infty}$}
+Se sono entrambi polinomi, se il grado del numeratore \`e maggiore fa infinito, se sono uguali fa il rapporto tra le incognite di grado massimo, se \`e minore fa zero.
+Se aggiungo ai polinomi funzioni limititate non sono significative.
+\subsection{$\frac{0}{0}$}
+Pu\`o essere necessario scomporre per riuscire a semplificare la funione.
+\subsection{Trattare forme indeterminate}
+Mettere in evidenza grado maggiore, razionalizzare, scomporre e altro.
+\subsection{Funzione monotona e esistenza del limite sinistro e destro}
+\subsubsection{Enunciato}
+$f:X\subset\mathbb{R}\rightarrow\mathbb{R}$ funzione monotona, e f crescente in X, $x_0\in\mathbb{R}$ punto di accumulazione per X allora $\exists\lim\limits_{x\rightarrow x^-_0}
+f(x)=sup f(x), x\in X\cap]-\infty, x_0[$\\
+$\exists\lim\limits_{x\rightarrow x^+_0}f(x)=inf f(x) X\cap]x_0,+\infty[$.\\
+Analogamente il caso di f decrescente.\\
+\subsubsection{Dimostrazione}
+Del limite sinistro. $l=\sup\limits_{X\cap]f-\infty, x_0[}$ Per definizione di l: $f(x)\le l \forall x\in X\cap]-\infty, x_0[$ e che $\forall \epsilon>0\exists x_\epsilon\in X
+\cap]-\infty, x_0[: l-\epsilon\le f(x_\epsilon)\le f(x) \forall x\in X\cap]x_\epsilon, x_0[$ quindi $\forall\epsilon>0 \exists ]x_\epsilon, x_0[ l-\epsilon \le f(x)\le l<l+\epsilon\Leftrightarrow|f(x)-l|<\epsilon \forall x\in X\cap ]x_\epsilon, x_0[$ ho perci\`o dimostrato che il limite di l sia il sup. Se $l=+\infty$ allora f non \`e limitata
+superiormente in $X\cap]-\infty;x_0[$, quindi $\forall M>0,\exists x_M\in X\cap]-\infty;x_0[:f(x_M)>M$, siccome f \`e crescente allora $M\le f(x_M)\le f(x)\forall x\in 
+X\cap]x_M;x_0[$, ossia $\lim\limits_{x\rightarrow x_0^-}f(x)=+\infty$.\\
+Nel caso in cui la funzione sia decrescente viene dimostrato analogalmente.
+\subsubsection{Corollari}
+Sia $x_0\in\mathbb{R}$ punto di accumulazione per X e si supponga f monotona, allora $\exists\lim\limits_{x\rightarrow x_0^-}, \exists\lim\limits_{x\rightarrow x_0^=}$ ma non \`e detto che  $\exists\lim\limits_{x\rightarrow x_0}$, esiste solo se i due limiti sono uguali.
+\subsubsection{Applicazioni}
+$\lim\limits{x\rightarrow +\infty} e^x= sup e^x=+\infty$\\
+$\lim\limits{x\rightarrow -\infty} e^x= inf e^x=+0$\\
+$\lim\limits{x\rightarrow +\infty} \arctan x= sup \arctan x=\frac{\pi}{2}$\\
+Ho i limiti se conosco sup e inf, o viceversa.
+\section{Limite di funzioni composte}
+$f: X\subset\mathbb{R}\rightarrow\mathbb{R}, x_0$ punto di accumulazione per X.\\
+$g: Y\subset\mathbb{R}\rightarrow\mathbb{R}, y_0$ punto di accumulazione per Y.\\
+Se $\lim\limits_{x\rightarrow x_0} f(x)=y_0\;\lim\limits_{y\rightarrow y_0} g(y)=k$\\
+$\lim\limits_{x\rightarrow x_0} g(f(x))=k$\\
+$f(x)\neq y_0$ in un intorno U di $x_0$
+\subsection{Osservazioni}
+L'ipotesi che $f(x)\neq y_0$ in un intorno di di $x_0$ non \`e necessaria se $y_0\in Y\wedge g(y_0)=k$\\
+Questo risultato si denota come cambiamento di variabili: $\lim\limits_{x\rightarrow x_0} g(f(x))=\lim\limits_{y\rightarrow y_0} g(y), f(x)=y\rightarrow y_0$\\
+Dal teorema del limite per funzioni composte, segue che se $f$ \`e continua in $x_0\in X$ e se $g$ \`e continua in $y_0=f(x_0)\in Y$ allora $\lim\limits_{x\rightarrow x_0} g(f(x)=g(f(x_0))=(g\circ f)(x)$: la composta di funzioni continue \`e a sua volta continua.
+\section{Limiti notevoli per le funzioni trigonometriche}
+\subsection{$\lim\limits_{x\rightarrow 0} \frac{\sin x}{x}=1$}
+Dimostrazione: $x\in ]0,\frac{\pi}{2}[$, si disegni nella circonferenza goniometrica la tangente e il seno di x. L'area del triangolo formato tra origine e tangente \`e
+ $\frac{\tan x}{2}$, l'area del triangolo formato da origine e il seno di x \`e $\frac{\sin x}{2}$, l'area del settore circolare individuato dall'asse delle x e il seno di x
+ \`e $\frac{x}{2}$. Confrontando le aree $\forall x\in \mathbb{R}\backslash 0,\frac{\pi}{2}$: $\frac{\sin x}{2}<\frac{x}{2}<\frac{\tan x}{2}\Leftrightarrow$, dividendo per il seno 
+ $1<\frac{x}{\sin x}<\frac{1}{\cos x}$, reciproci $\cos x<\frac{\sin x}{x}<1$, essendo il coseno e il rapporto pari si ottiene la stessa disuguaglianza $\forall x\in ]\frac{\pi}{2};]\frac{\pi}{2}\backslash\{0\}$, per il teorema del confronto ottengo $1<\frac{\sin x}{x}<1$, perci\`o $\sin x=1$
+\subsection{$\lim\limits_{x\rightarrow 0} \frac{1-\cos x}{x^2}=\frac{1}{2}$}
+$\frac{1-\cos x}{x^2}=\frac{1-\cos x}{x^2}\cdot\frac{1+\cos x}{1+\cos x}$\\
+$=\frac{\sin^2 x}{x^2}\cdot\frac{1}{1+\cos x}$\\
+$\lim\limits_{x\rightarrow 0}\frac{\sin^2 x}{x^2}=1$\\
+$\lim\limits_{x\rightarrow 0}\frac{1}{1+\cos x}=\frac{1}{2}$\\
+$\lim\limits_{x\rightarrow 0} \frac{1-\cos x}{x^2}=\frac{1}{2}$
+\subsection{Corollari dei due limiti notevoli dimostrati sopra}
+\begin{itemize}
+\item $\lim\limits_{x\rightarrow 0} \frac{\tan x}{x}=1$
+\item $\lim\limits_{x\rightarrow 0} \frac{\arcsin x}{x}=1$
+\item $\lim\limits_{x\rightarrow 0} \frac{\arctan x}{x}=1$
+\end{itemize}
