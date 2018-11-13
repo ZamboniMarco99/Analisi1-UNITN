@@ -1,0 +1,165 @@
+\chapter{Limiti}
+\section{Intorno}
+Fissati $x_0 \in \mathbb{R}$, $\epsilon >0$ chiameremo INTORNO(SFERICO) di centro $x_0$ e raggio $\epsilon$ l'intervallo ]$x_0-\epsilon ,x_0+\epsilon$[
+\begin{itemize}
+\item[=]$\{x \in \mathbb{R}: d(x,x_0)<\epsilon \}$
+\item[=]$\{x \in \mathbb{R}: |x-x_0|<\epsilon \}$
+\end{itemize}
+\section{Estremi (relativi) di una funzione}
+$f:X \subseteq \mathbb{R} \rightarrow \mathbb{R}$, $x_0 \in X$ $x_0$ si dice PUNTO DI MINIMO LOCALE (o relativo) DI $f$ e $f(x_0)$ si dice MINIMO LOCALE (o relativo) se $\exists U \in I_{x_0}$ (= intorno di $x_0$) t.c. $f(x_0) \le f(x)$ $\forall x \in U \cap X$ (se $f(x_0)<f(x)$ $\forall x \not= x_0$, allora $x_0$ si dice PUNTO DI MINIMO LOCALE STRETTO (o forte) per $f$) \\
+Analogamente si definisce PUNTO DI MASSIMO LOCALE DI $f$ e MASSIMO LOCALE \\ ($f(x_0) \ge f(x)$ $\forall x \in U \cap X$)
+\section{Numeri reali estesi}
+$\overline{\mathbb{R}} \triangleq \mathbb{R} \cup \{+\infty,-\infty\}$
+\begin{itemize}
+\item[N.B.:]$+\infty$ e $-\infty$ sono due simboli 
+\item[]$\overline{\mathbb{R}}$ NON \'e pi\'u un insieme numerico 
+\end{itemize}
+\section{Intorno di $+\infty$ e $-\infty$ }
+Si dice INTORNO (SFERICO) DI $+\infty$ qualunque semiretta t.c. ]$M,+\infty$[=$\{x \in \mathbb{R}: x>M\}$ \\
+Si dice INTORNO (SFERICO) DI $-\infty$ qualunque semiretta t.c. ]$-\infty ,M$[=$\{x \in \mathbb{R}: x<M\}$
+\section{Punto di accumulazione}
+Sia $A \subseteq \mathbb{R}$, si dice che $x_0 \in \overline{\mathbb{R}}$ \'e un PUNTO DI ACCUMULAZIONE PER $A$ se ogni intorno di $x_0$ contiene un punto di $A$ diverso da $x_0$, ossia: \\
+$\forall U \in I_{x_0}$ si ha ($U \setminus \{x_0\} \cap A \not= \emptyset$)
+\subsection{Punti di accumulazione (destro e sinistro)}
+Sia $x_0 \in \mathbb{R}$ si dice PT DI ACCUM. SINISTRO (o DESTRO) PER $X$ se $x_0$ \'e un pt di accum. per $X \cap ]-\infty,x_0[$ (analogamente $X \cap ]x_0,+\infty[$)
+\section{Punto isolato}
+Sia $A \subseteq \mathbb{R}$, un punto $x_0 \in A$ che non \'e un punto di accumulazione per $A$ si dice PUNTO ISOLATO, ossia $x_0 \in A$ \'e un punto isolato se: \\
+$\exists U \in I_{x_0}$ t.c. $U \cap A = \{x_0\}$
+\section{Limite}
+Sia $X \subseteq \mathbb{R}$, $f:X \rightarrow \mathbb{R}$ una funzione, sia $x_0 \in \overline{\mathbb{R}}$ un pt di accum. per $X$ \\
+Allora $l \in \overline{\mathbb{R}}$ si dice LIMITE PER $f(x)$ TENDENTE A $x_0$ e si scrive: \\
+$\smash{\displaystyle\lim_{x \to x_0}} f(x)=l$ $\hspace{.7cm}$ oppure $\hspace{.7cm}$ $\smash{\displaystyle f(x)_{x \to x_0} \to l}$ \\
+\\
+Se $\forall$ intorno $V$ di $l$, esiste un intorno $U$ di $x_0$ t.c. $\forall x \in (U \cap X) \setminus \{x_0\}$ allora $f(x) \in V$
+\subsection{Limite (sinitro e destro)}
+Sia $X \subseteq \mathbb{R}$, $f:X \rightarrow \mathbb{R}$ una funzione e $x_0 \in \mathbb{R}$ pt di accum. sinistro (o destro) per $X$ \\
+allora $l \in \overline{\mathbb{R}}$ si dice LIMITE SINISTRO (o DESTRO) PER $f(x)$ per $x \to x_0$, e scriveremo \\
+$\smash{\displaystyle\lim_{x \to x^{-}_{0}}} f(x)=l$ $\hspace{.6cm}$ $\biggl($o$\smash{\displaystyle\lim_{x \to x^{+}_{0}}} f(x)=l \biggl)$ \\
+\\
+Se $\forall$ intorno $V$ di $l$, esiste un intorno sinistro (o destro) $U$ di $x_0$ t.c. $\forall x \in U \cap X \setminus \{x_0\}$ si ha $f(x) \in V$
+\section{Teorema dell'unicit\'a del limite}
+Se esiste il limite $\smash{\displaystyle\lim_{x \to x_0}} f(x)$ allora esso \'e unico
+\section{Teorema della limitatezza}
+Se il limite $\smash{\displaystyle\lim_{x \to x_0}} f(x)=l \in \mathbb{R}$ allora $f$ \'e limitata in un intorno di $x_0$
+\section{Teorema della permanenza del segno}
+Sia $x \subseteq \mathbb{R}$, $f:X \rightarrow \mathbb{R}$, $x_0 \in \overline{\mathbb{R}}$ pt di accum. per $X$ e $l \in \overline{\mathbb{R}}$ \\
+se $\smash{\displaystyle\lim_{x \to x_0}} f(x)=l >0$ (e analogamente $<0$) \\
+\\
+allora esiste un intorno $U$ di $x_0$ t.c. $f(x)>0$ (analogamente $<0$) $\forall x \in U \cap X \setminus \{x_0\}$ \\
+\\
+\\
+\\
+\section{Teorema dell'algebra dei limiti}
+Siano $f, g$ due funzioni, $x_0 \in \overline{\mathbb{R}}$ pt di accum. per dom$f \cap$ dom$g$
+supponiamo $\smash{\displaystyle\lim_{x \to x_0}} f(x)=l_f \in \mathbb{R}$ e $\smash{\displaystyle\lim_{x \to x_0}} f(x)=l_g \in \mathbb{R}$ allora:
+\begin{itemize}
+\item[a)]$f(x)\pm g(x) \rightarrow l_f \pm l_g$ per $x \to x_0$
+\item[b)]$f(x)\cdot g(x) \rightarrow l_f \cdot l_g$ per $x \to x_0$
+\item[c)]$\frac{f(x)}{g(x)} \rightarrow \frac{l_f}{l_g}$ se  $lg \not=0$ e per $x \to x_0$
+\end{itemize}
+\subsection{Parziale estensione dell'algebra dei limiti a $\overline{\mathbb{R}}$ }
+Sia $x_0 \in \overline{\mathbb{R}}$ pt di accum. per dom$f \cap$ dom$g$, allora se per $x \to x_0$ si ha:
+\begin{itemize}
+\item[a)]$f(x) \to +\infty$, $g(x)$ limitata inferiormente in un intorno di $x_0$ \\
+$f(x)+g(x) \longrightarrow +\infty$ (per $x \to x_0$) \\
+\\
+$f(x) \to +\infty$, $g(x)$ limitata superiormente in un intorno di $x_0$ \\
+$f(x)+g(x) \longrightarrow -\infty$ (per $x \to x_0$)
+\item[b)]$f(x) \to +\infty$, $g(x) \to l_g \not=0$
+\begin{itemize}
+\item[i)]$+\infty$ se $l_g>0$
+\item[ii)]$-\infty$ se $l_g<0$
+\end{itemize}
+\item[c)]$f(x) \to 0$, $g(x)$ limitata in un intorno di $x_0$ \\
+$f(x)\cdot g(x) \longrightarrow 0$ (per $x \to x_0$)
+\item[d)]$f(x) \to 0$, $f(x)>0$ in un intorno di $x_0$ \\
+$\frac{1}{f(x)} \longrightarrow +\infty$ (per $x \to x_0$)\\
+\\
+$f(x) \to 0$, $f(x)<0$ in un intorno di $x_0$ \\
+$\frac{1}{f(x)} \longrightarrow -\infty$ (per $x \to x_0$) \\
+\\
+$f(x) \to \pm \infty$ \\
+$\frac{1}{f(x)} \longrightarrow 0$ (per $x \to x_0$)
+\end{itemize}
+\section{Teorema del confronto (o dei due carabinieri)}
+Siano $f,g,h : X \rightarrow \mathbb{R}$, $x_0 \in \overline{\mathbb{R}}$ pt di accum. per $X$ \\
+se $f(x) \le g(x) \le h(x)$ $\forall x \in U \cap X \setminus \{x_0\}$ con $U$ intorno di $x_0$ 
+e se $\smash{\displaystyle\lim_{x \to x_0}} f(x)= \smash{\displaystyle\lim_{x \to x_0}} h(x)=l \in \overline{\mathbb{R}}$ \\
+allora $\smash{\displaystyle\lim_{x \to x_0}} g(x)=l$
+\section{Funzione monotona ed esistenza del limite sinistro/destro}
+Sia $f: X \subseteq \mathbb{R} \to \mathbb{R}$ una funzione monotona
+\begin{itemize}
+\item[a)] se $f$ \'e crescente in $X$, $x_0 \in \mathbb{R}$ pt di accum. sinistro per $X$, allora \\
+$\exists \smash{\displaystyle\lim_{x \to x^{-}_0}} f(x)=\smash{\displaystyle\sup_{x \in X \cap ]-\infty,x_0[}} f$ \\
+\\
+- se $x_0=+\infty$ allora $\smash{\displaystyle\lim_{x \to +\infty}} f(x)=\smash{\displaystyle\sup_{X}} f$
+\item[b)]se $f$ \'e crescente in $X$, $x_0 \in \mathbb{R}$ pt di accum. destro per $X$, allora \\
+$\exists \smash{\displaystyle\lim_{x \to x^{+}_0}} f(x)=\smash{\displaystyle\inf_{x \in X \cap ]x_0,+\infty[}} f$ \\
+\\
+- se $x_0=-\infty$ allora $\smash{\displaystyle\lim_{x \to -\infty}} f(x)=\smash{\displaystyle\inf_{X}} f$
+\item[c)]Analogamente per $f$ decrescente
+\end{itemize}
+\section{Continuit\'a}
+$f:X \subseteq \mathbb{R} \to \mathbb{R}$, $x \in X$ 
+\begin{itemize}
+\item[-]se $x_0$ \'e un pt isolato di $X$, diremo che $f$ \'e continua in $x_0$ 
+\item[-]se $x_0$ \'e un pt di accum. per $X$, diremo che $f$ \'e continua in $x_0$ se
+\begin{itemize}
+\item[i)]$\exists \smash{\displaystyle\lim_{x \to x_0}} f(x)$
+\item[ii)]$\smash{\displaystyle\lim_{x \to x_0}} f(x)=f(x_0)$
+\end{itemize}
+\end{itemize}
+\subsection{ $f$ continua in $X$ }
+$f:X \subseteq \mathbb{R} \to \mathbb{R}$ si dice CONTINUA IN $X$ se \'e continua in TUTTI I PUNTI DI $X$
+\section{Limiti di funzioni composte}
+$f: X \subseteq \mathbb{R} \to \mathbb{R}$, $g: Y \subseteq \mathbb{R} \to \mathbb{R}$, $x_0 \in \overline{\mathbb{R}}$ pt di accum. per $X$, $y_0 \in \overline{\mathbb{R}}$ pt di accum. per $Y$ \\
+se $\smash{\displaystyle\lim_{x \to x_0}} f(x)=y_0$ con $f(x) \not=y_o$, $\smash{\displaystyle\lim_{y \to y_0}} g(y)=k$\\
+\\
+allora $\smash{\displaystyle\lim_{x \to x_0}} g(f(x))= \smash{\displaystyle\lim_{y \to y_0}} g(y)=k$
+\section{Infiniti a confronto (gerarchia degli infiniti)}
+$$|\log_b x|^{\alpha} \ll x^{\beta} \ll a^{x}$$ per $x \to +\infty \hspace{0.6cm} \forall \alpha \in \mathbb{R}$, $\forall b>0$, $b \not=1$, $\forall \beta >0$, $\forall a \ge 1$
+\section{Formula di Stirling}
+$n! \sim (\frac{n}{e})^{n}\sqrt{2\pi n} \hspace{.6cm}$ per $n \to +\infty$ \\
+\\
+Oss.: $a_n \sim b_n \Leftrightarrow \smash{\displaystyle\lim_{n \to +\infty}} \frac{a_n}{b_n} = 1$
+\subsection{Numero di Nepero $e$ }
+La successione $a_n=(1+ \frac{1}{n})^{n}$ \'e strettamente crescente e limitata, quindi \\
+\begin{itemize}
+\item[a)] $\{a_n\}$ \'e strettamente crescente per $n \ge 2$
+\item[b)] $\{a_n\}$ \'e limitata
+\end{itemize}
+Dal teorema di esistenza del limite per funzioni monotone, segue che esiste il limite finito di $\{a_n\}$. Allora poniamo $$e \triangleq \smash{\displaystyle\lim_{n \to +\infty}} \biggl(1+\frac{1}{n}\biggl)^n \hspace{1cm} \biggl(=\smash{\displaystyle\sup_{n}} \{a_n\}\biggl)$$ e ovviamente da $2<e<4$ si ha $e=2.71828...$
+\section{Divergenza}
+Sia $f:X \subseteq \mathbb{R} \to \mathbb{R}$, $x_0 \in \overline{\mathbb{R}}$ pt di accum. per $X$ \\
+Se $\smash{\displaystyle\lim_{x \to x_0}} f(x)=\pm \infty$, $f$ si dice DIVERGENTE POSITIVA (o negativa), \\
+\\ 
+oppure INFINITA, oppure UN INFINITO, per $x \to x_0$
+\section{Infiniti a confronto (ordini)}
+Siano $f,g$ funzioni, $x_0 \in \overline{\mathbb{R}}$ pt di accum. per dom$f \cap$ dom$g$
+\begin{itemize}
+\item[-]Se $f$ e $g$ sono entrambe infinite per $x \to x_0$, e $\smash{\displaystyle\lim_{x \to x_0}} \frac{f(x)}{g(x)}=0$ si dice che $f$ \'e \\
+\\
+un INFINITO DI ORDINE INFERIORE rispetto a $g$, per $x \to x_0$ \\
+(equivalentemente $g$ \'e un INFINITO DI ORDINE SUPERIORE rispetto a $f$, per $x \to x_0$)
+\item[-]Se invece $\smash{\displaystyle\lim_{x \to x_0}} \frac{f(x)}{g(x)}=l \in \mathbb{R} \setminus \{0\}$ si dice che $f$ e $g$ sono INFINITI DELLO STESSO ORDINE per $x \to x_0$
+\item[-]Se $l=1$, si usa la notazione $f \sim g$ per $x \to x_0$, e si dice che $f$ \'e ASINTOTICA a $g$ \\
+per $x \to x_0$
+\item[-]Negli altri casi $\bigl($se $\frac{f}{g}$ o $\frac{g}{f}$ non ammette limite$\bigl)$ si dice che $f$ e $g$ \\
+NON SONO CONFRONTABILI, per $x \to x_0$ 
+\end{itemize}
+\section{Simbolo $o(1)$ }
+Sia $f$ una funzione infinitesima (o un infinitesimo) per $x \to x_0$ allora potremo scrivere anche \\
+$f(x)=o(1)$ per $x \to x_0$ ($f$ \'e un o-piccolo di 1, per $x \to x_0$)
+\section{Infinitesimi a confronto (ordini)}
+Siano $f,g$ funzioni, $x_0 \in \overline{\mathbb{R}}$ pt di accum. per dom$f \cap$ dom$g$
+\begin{itemize}
+\item[-]Se $f$ e $g$ sono entrambe infinitesime per $x \to x_0$, e $\smash{\displaystyle\lim_{x \to x_0}} \frac{f(x)}{g(x)}=0$ si dice che $f$ \'e \\
+\\
+un INFINITESIMO DI ORDINE INFERIORE rispetto a $g$, per $x \to x_0$ \\
+(equivalentemente $g$ \'e un INFINITESIMO DI ORDINE SUPERIORE rispetto a $f$, per $x \to x_0$)
+\item[-]Se invece $\smash{\displaystyle\lim_{x \to x_0}} \frac{f(x)}{g(x)}=l \in \mathbb{R} \setminus \{0\}$ si dice che $f$ e $g$ sono INFINITESIMI DELLO STESSO ORDINE per $x \to x_0$
+\item[-]Se $l=1$, si usa la notazione $f \sim g$ per $x \to x_0$, e si dice che sono ASINTOTICHE
+\item[-]Negli altri casi $\bigl($se n\'e $\frac{f}{g}$, n\'e $\frac{g}{g}$ non ammette limite finito, per $x \to x_0\bigl)$ si dice che $f$ e $g$ \\
+NON SONO CONFRONTABILI
+\end{itemize}
+\end{document}
