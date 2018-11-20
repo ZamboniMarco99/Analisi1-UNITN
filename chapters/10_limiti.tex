@@ -1,0 +1,267 @@
+\chapter{Limiti}
+\section{Numeri reali estesi}
+L'insieme dei numeri reali estesi $\overline{\mathbb{R}}$ si definisce come:
+\begin{equation}
+\overline{\mathbb{R}} \triangleq \mathbb{R} \cup \{+\infty,-\infty\}
+\end{equation}
+\subsection{Osservazioni}
+Essendo $+\infty$ e $-\infty$ due simboli $\overline{\mathbb{R}}$ \textbf{non} è un insieme numerico
+
+\section{Intorno}
+\subsection{Intorno di un reale}
+Fissati $x_0 \in \mathbb{R}$, $\epsilon >0$ chiameremo \textbf{intorno sferico} di centro $x_0$ e raggio $\epsilon$ l'intervallo:\\
+$]x_0-\epsilon ,x_0+\epsilon[$ = $\{x \in \mathbb{R}:d(x,x_0)<\epsilon \}$ = $\{x \in \mathbb{R}: |x-x_0<\epsilon \}$
+\subsection{Intorno di $+\infty$ e $-\infty$ }
+Si dice \textbf{intorno sferico} di $+\infty$ qualunque semiretta t.c. $]M,+\infty[\ =\ \{x \in \mathbb{R}: x>M\}$ \\
+Si dice \textbf{intorno sferico} di $-\infty$ qualunque semiretta t.c. $]-\infty ,M[\ =\ \{x \in \mathbb{R}: x<M\}$
+
+\section{Estremi (relativi) di una funzione}
+Siano $f:X \subseteq \mathbb{R} \rightarrow \mathbb{R}$, $x_0 \in X$, $I_{x_0}$ intorno di $x_0$:
+\subsection{Minimo locale}
+$x_0$ si dice \textbf{punto di minimo locale} (o relativo) di $f$ e $f(x_0)$ si dice \textbf{minimo locale} (o relativo) se:
+\begin{equation}
+\exists \ U \in I_{x_0}\ |\ f(x_0) \le f(x)\ \forall\ x \in U \cap X
+\end{equation}
+\subsection{Minimo locale ristretto}
+$x_0$ si dice \textbf{punto di minimo locale ristretto} (o forte) di $f$ e $f(x_0)$ si dice \textbf{minimo locale ristretto} (o forte) se $x_0$ è un minimo locale e
+\begin{equation}
+f(x_0)<f(x)\ \forall x \neq x_0
+\end{equation}
+\subsection{Massimo locale}
+$x_0$ si dice \textbf{punto di massimo locale} (o relativo) di $f$ e $f(x_0)$ si dice \textbf{massimo locale} (o relativo) se:
+\begin{equation}
+\exists \ U \in I_{x_0}\ |\ f(x_0) \geq f(x)\ \forall\ x \in U \cap X
+\end{equation}
+\subsection{Massimo locale ristretto}
+$x_0$ si dice \textbf{punto di massimo locale ristretto} (o forte) di $f$ e $f(x_0)$ si dice \textbf{massimo locale ristretto} (o forte) se $x_0$ è un massimo locale e
+\begin{equation}
+f(x_0)>f(x)\ \forall x \neq x_0
+\end{equation}
+
+\section{Punto di accumulazione}
+Sia $A \subseteq \mathbb{R}$, si dice che $x_0 \in \overline{\mathbb{R}}$ \'e un \textbf{punto di accumulazione} per $\mathbb{A}$ se:
+\begin{equation}
+\forall\ U \in I_{x_0}\ U \setminus \{x_0\} \cap \mathbb{A} \neq \emptyset
+\end{equation}
+ossia ogni intorno di $x_0$ contiene un punto di $\mathbb{A}$ diverso da $x_0$
+\subsection{Punto di accumulazione sinistro}
+Sia $x_0 \in \mathbb{R}$ si dice \textbf{punto di accumulazione sinistro} per $\mathbb{A}$ se $x_0$ \'e un punto di accumulazione per $\mathbb{A}\ \cap\ ]-\infty,x_0[$
+\subsection{Punto di accumulazione sinistro}
+Sia $x_0 \in \mathbb{R}$ si dice \textbf{punto di accumulazione destro} per $\mathbb{A}$ se $x_0$ \'e un punto di accumulazione per $\mathbb{A}\ \cap\ ]x_0,+\infty[$
+\subsection{Punto isolato}
+Sia $A \subseteq \mathbb{R}$, un punto $x_0 \in A$ che non \'e un punto di accumulazione per $A$ si dice \textbf{punto isolato}:	
+\begin{equation}
+\exists U \in I_{x_0}\ |\ U\ \cap\ \mathbb{A} = \{x_0\}
+\end{equation}
+
+\section{Limite}
+Sia $\mathbb{X} \subseteq \mathbb{R}$, $f:\mathbb{X} \rightarrow \mathbb{R}$ una funzione, sia $x_0 \in \overline{\mathbb{R}}$ un punto di accumulazione per $\mathbb{X}$ \\
+Allora $l \in \overline{\mathbb{R}}$ si dice \textbf{limite} per $f(x)$ tendente a $x_0$ e si scrive:
+\begin{enumerate}
+\item[•] $\displaystyle \lim_{x \to x_0}f(x) = l$
+\item[•] $\displaystyle f(x) \xrightarrow[x \to x]{} l$
+\end{enumerate}
+\subsection{Limite sinitro e destro}
+Sia $\mathbb{X} \subseteq \mathbb{R}$, $f:\mathbb{X} \rightarrow \mathbb{R}$ una funzione e $x_0 \in \mathbb{R}$ punto di accum. sinistro (o destro) per $\mathbb{X}$ \\
+allora $l \in \overline{\mathbb{R}}$ si dice \textbf{limite sinistro o destro)} per $f(x)$ per $x \to x_0$, e si scrive \\
+\begin{enumerate}
+\item[•] $\displaystyle \lim_{x \to x_0^-}f(x) = l$ (sinistro)
+\item[•] $\displaystyle \lim_{x \to x_0^+}f(x) = l$ (destro)\end{enumerate}
+\subsection{Osservazione}
+Se $\forall$ intorno $V$ di $l$, esiste un intorno (anche destro o sinistro) $U$ di $x_0$ t.c. $\forall x \in (U \cap X) \setminus \{x_0\}$ allora $f(x) \in V$
+
+\section{Teorema dell'unicità del limite}
+Se esiste il limite $\displaystyle \lim_{x \to x_0}f(x) = l$ allora esso è unico
+\section{Teorema della limitatezza}
+Se il limite $\displaystyle \lim_{x \to x_0}f(x) = l \in \mathbb{R}$ allora $f$ è limitata in un intorno di $x_0$
+\section{Teorema della permanenza del segno}
+Sia $x \subseteq \mathbb{R}$, $f:\mathbb{X} \rightarrow \mathbb{R}$, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $\mathbb{X}$ e $l \in \overline{\mathbb{R}}$
+\begin{equation}
+\begin{split}
+\displaystyle \lim_{x \to x_0}f(x) = l > 0 \implies \exists \text{ un intorno } U \text{ di } x_0\ |\ f(x)>0\ \forall\ x \in U \cap \mathbb{X} \setminus \{x_0\} \\
+\lim_{x \to x_0}f(x) = l < 0 \implies \exists \text{ un intorno } U \text{ di } x_0\ |\ f(x)<0\ \forall\ x \in U \cap \mathbb{X} \setminus \{x_0\}
+\end{split}
+\end{equation}
+\section{Algebra dei limiti}
+Siano $f, g$ due funzioni, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $domf \cap domg$
+supponiamo $\displaystyle \lim_{x \to x_0}f(x) = l_f \in \mathbb{R}$ e $\displaystyle \lim_{x \to x_0}g(x) = l_g \in \mathbb{R}$ allora:
+\begin{enumerate}
+\item[a)]$f(x)\pm g(x) \rightarrow l_f \pm l_g$ per $x \to x_0$
+\item[b)]$f(x)\cdot g(x) \rightarrow l_f \cdot l_g$ per $x \to x_0$
+\item[c)]$\frac{f(x)}{g(x)} \rightarrow \frac{l_f}{l_g}$ per $x \to x_0$ ($l_g \neq 0$)
+\end{enumerate}
+\subsection{Estensione a $\overline{\mathbb{R}}$ }
+Sia $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $domf \cap domg$, allora per $x \to x_0$ si ha:
+\begin{enumerate}
+\item[d)]Se $f(x) \to +\infty$ e $g(x)$ limitata inferiormente in un intorno di $x_0$:\\
+$f(x)+g(x) \longrightarrow +\infty$ \\
+Se $f(x) \to -\infty$ e $g(x)$ limitata superiormente in un intorno di $x_0$:\\
+$f(x)+g(x) \longrightarrow -\infty$
+\item[e)]$f(x) \to +\infty$, $g(x) \to l_g \not=0$
+\begin{itemize}
+\item[i)]$f(x) \cdot g(x) = +\infty$ se $l_g>0$
+\item[ii)]$f(x) \cdot g(x) = -\infty$ se $l_g<0$
+\end{itemize}
+\item[f)]Se $f(x) \to 0$ e $g(x)$ limitata in un intorno di $x_0$ :\\
+$f(x)\cdot g(x) \longrightarrow 0$
+\item[g)]$f(x) \to 0$, $f(x)>0$ in un intorno di $x_0$
+\begin{itemize}
+\item[i)]$\frac{1}{f(x)} \to +\infty$ se $f(x)>0$ in un intorno di $x_0$
+\item[ii)]$\frac{1}{f(x)} \to -\infty$ se $f(x)<0$ in un intorno di $x_0$
+\end{itemize}
+\item[h)]Se $f(x) \to \pm \infty$: \\
+$\frac{1}{f(x)} \longrightarrow 0$
+\end{enumerate}
+\section{Teorema del confronto (o dei due carabinieri)}
+Siano $f,g,h: \mathbb{X} \subseteq \mathbb{R} \to \mathbb{R}$ e $x_0 \in \mathbb{\overline{R}}$ punto di accumulazione per $\mathbb{X}$\\
+\begin{equation}
+\begin{cases}
+f(x) \leq g(x) \leq h(x) \text{ in un intorno } U \setminus \{x_0\} \text{ di } x_0 \in domf\\
+\displaystyle \lim_{x \to x_0}f(x) = \lim_{x \to x_0}h(x) = l \in \mathbb{\overline{R}}
+\end{cases}
+\implies \exists \displaystyle \lim_{x \to x_0}g(x) = l
+\end{equation}
+\section{Limiti dx e sx di funzioni monotone}
+\subsection{Monotonia crescente}
+Se $f: \mathbb{X} \subseteq \mathbb{R} \to \mathbb{R}$ una funzione monotona crescente in $\mathbb{X}$
+\begin{enumerate}
+\item[•] $x_0 \in \mathbb{R}$ punto di accumulazione sinistro per $\mathbb{X} \implies\ \exists \displaystyle \lim_{x \to x_0^-}f(x) = \sup_{x \in \mathbb{X} \cap ]-\infty;x_0[}f$
+\item[•] $x_0 \in \mathbb{R}$ punto di accumulazione destro per $\mathbb{X} \implies\ \exists \displaystyle \lim_{x \to x_0^+}f(x) = \inf_{x \in \mathbb{X} \cap ]x_0;+\infty[}f$
+\end{enumerate} 
+\subsection{Monotonia decrescente}
+Se $f: \mathbb{X} \subseteq \mathbb{R} \to \mathbb{R}$ una funzione monotona decrescente in $\mathbb{X}$
+\begin{enumerate}
+\item[•] $x_0 \in \mathbb{R}$ punto di accumulazione sinistro per $\mathbb{X} \implies\ \exists \displaystyle \lim_{x \to x_0^-}f(x) = \inf_{x \in \mathbb{X} \cap ]-\infty;x_0[}f$
+\item[•] $x_0 \in \mathbb{R}$ punto di accumulazione destro per $\mathbb{X} \implies\ \exists \displaystyle \lim_{x \to x_0^+}f(x) = \sup_{x \in \mathbb{X} \cap ]x_0;+\infty[}f$
+\end{enumerate} 
+
+\section{Continuità}
+\subsection{Continuità in un punto}
+$f:\mathbb{X} \subseteq \mathbb{R} \to \mathbb{R}$, $x \in \mathbb{X}$ è continua in $x_0 \in \mathbb{X}$ se:
+\begin{enumerate}
+\item[•]$x_0$ è un punto isolato di $\mathbb{X}$
+\item[•]$
+\begin{cases}
+x_0 \text{ è un punto di accumulazione per }\mathbb{X}\\
+\exists\ \displaystyle \lim_{x \to x_0}f(x) = f(x_0)
+\end{cases}$
+\end{enumerate}
+\subsection{Continuità in un insieme}
+$f:\mathbb{X} \subseteq \mathbb{R} \to \mathbb{R}$ si dice continua $\mathbb{A} \subseteq \mathbb{X}$ se è continua in tutti i punti di $\mathbb{A}$
+\section{Limiti di funzioni composte}
+Sia $f: \mathbb{X} \subseteq \mathbb{R} \to \mathbb{R}$, $g: \mathbb{Y} \subseteq \mathbb{R} \to \mathbb{R}$, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $\mathbb{X}$ e $y_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $\mathbb{Y}$.
+\begin{equation}
+\begin{cases}
+\displaystyle\lim_{x \to x_0}f(x)=y_0, f(x) \neq y_0\\
+\displaystyle \lim_{y \to y_0} g(y)=k
+\end{cases}
+\implies \displaystyle\lim_{x \to x_0} g(f(x)) = \displaystyle\lim_{y \to y_0} g(y)=k
+\end{equation}
+
+\section{Gerarchia infiniti}
+\begin{equation}
+\begin{split}
+|\log_b x|^{\alpha} \ll x^{\beta} \ll a^{x} \text{ per } x \to +\infty\\
+\forall \alpha \in \mathbb{R}, \forall b>0, b \neq 1, \forall \beta >0, \forall a \ge 1
+\end{split}
+\end{equation}
+In particolare per le successioni vale:
+
+\begin{equation}
+\begin{split}
+\log_b n \ll n^{\alpha} \ll a^{n} \text{ per } x \to +\infty\\
+\forall \alpha \in \mathbb{R}, \forall b>0, b \neq 1, \forall \beta > 0, \forall a \ge 1
+\end{split}
+\end{equation}
+
+\section{Numero di Nepero $e$ }
+Particolarmente interessante è studiare la successione $\{a_n=(1+ \frac{1}{n})^{n}, n \in \mathbb{N}, n \geq 1\}$. In particolare:
+\begin{itemize}
+\item[a)] $\{a_n\}$ \'e strettamente crescente
+\item[b)] $\{a_n\}$ \'e limitata
+\end{itemize}
+Dal teorema di esistenza del limite per funzioni monotone, segue che esiste il limite, e in particolare è finito. Avendo il valore moltissime altre proprietà in matematica viene considerato una delle costanti fondamentali:
+\begin{equation}
+e \triangleq \displaystyle\lim_{n \to +\infty} \biggl(1+\frac{1}{n}\biggl)^n \text{      } (=\displaystyle\sup_{n} \{a_n\})
+\end{equation}
+$e \not \in \mathbb{Q}, e \in \mathbb{R}, e=2.71828...$
+\subsection{Formula di Stirling}
+$n! \sim (\frac{n}{e})^{n}\sqrt{2\pi n} \hspace{.6cm}$ per $n \to +\infty$ \\
+\\
+L'operatore $\sim$ tra due successioni è tale che $a_n \sim b_n \iff \displaystyle\lim_{n \to +\infty} \frac{a_n}{b_n} = 1$
+
+\section{Divergenza}
+Sia $f:\mathbb{X} \subseteq \mathbb{R} \to \mathbb{R}$, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $\mathbb{X}$
+\begin{enumerate}
+\item[i.]Se $\displaystyle\lim_{x \to x_0} f(x)=\pm \infty$, $f$ si dice \textbf{divergente} positiva (o negativa) oppure infinita (o un infinito) per $x \to x_0$
+\item[ii.]Se $\displaystyle\lim_{x \to x_0} f(x)=\pm \infty$, $f$ si dice infinitesima (o un infinitesimo) per $x \to x_0$
+\end{enumerate}
+
+\section{Confronto di infiniti}
+Siano $f,g$ funzioni, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $domf \cap domg$. $f,g$ entrambe divergenti per $x \to x_0$ (e $g(x) \neq 0$ in un intorno di $x_0$)
+\begin{enumerate}
+\item[-]Se $\displaystyle \lim_{x \to x_0}\frac{f(x)}{g(x)} = 0$ si dice che $f$ è un infinito di ordine inferiore e $g$ di ordine superiore per $x \to x_0$
+\item[-]Se $\displaystyle \lim_{x \to x_0}\frac{f(x)}{g(x)} = l \in \mathbb{R}$ si dice che $f$ e $g$ sono infiniti dello stesso ordine per $x \to x_0$\\
+Se $l = 1$ si può anche scrivere $f(x) \sim g(x)$ per $x \to x_0$, cioè $f$ è asintotica a $g$ per $x \to x_0$ 
+\end{enumerate}
+Non è comunque detto che gli infiniti siano confrontabili.
+
+\section{Confronto di infinitesimi}
+Siano $f,g$ funzioni, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $domf \cap domg$. $f,g$ entrambe infinitesime per $x \to x_0$ (e $g(x) \neq 0$ in un intorno di $x_0$)
+\begin{enumerate}
+\item[-]Se $\displaystyle \lim_{x \to x_0}\frac{f(x)}{g(x)} = 0$ si dice che $f$ è un infinitesimo di ordine superiore e $g$ di ordine inferiore per $x \to x_0$
+\item[-]Se $\displaystyle \lim_{x \to x_0}\frac{f(x)}{g(x)} = l \in \mathbb{R}$ si dice che $f$ e $g$ sono infinitesimi dello stesso ordine per $x \to x_0$\\
+\end{enumerate}
+Non è comunque detto che gli infinitesimi siano confrontabili.
+
+\section{Notazione o-piccolo}
+Siano $f,g$  funzioni infinitesime per $x \to x_0$ e $g(x) \neq 0$ in un intorno di $x_0$.\\
+Se $\displaystyle \lim_{x \to x_0}\frac{f(x)}{g(x)} = 0$ è equivalente a scrivere $f(x) = o(g(x))$.\\
+In particolare se $\displaystyle \lim_{x \to x_0}f(x) = 0$ è equivalente a $f(x) = o(1)$.
+\subsection{Algebretta degli $o(1)$}
+\begin{enumerate}
+\item[i.] $ko(1) = o(1)\ \forall\ k \in \mathbb{R} \setminus \{0\}  (0 \times o(1) = 0$
+\item[ii.] $o(1)\times o(1) = o(1)$
+\item[iii.] $o(1) \pm o(1) = o(1)$ 
+\end{enumerate} 
+In particolare se $f(x) = o(|x-x_0|^{\alpha})$ si dice semplicemente che f è infinitesima di ordine superiore ad $\alpha$  per $x-x_0$
+\subsection{Algebretta degli o-piccolo}
+\begin{enumerate}
+\item[i.] $ko(x^{\alpha}) = o(x^{\alpha})$
+\item[ii.] $x^{\beta}o(x^{\alpha}) = o(x^{\alpha + \beta})$
+\item[iii.] $o(x^{\beta})o(x^{\alpha}) = o(x^{\alpha + \beta})$
+\item[iv.] $o(x^{\beta}) \pm o(x^{\alpha}) = o(x^{min(\alpha ,\beta)})$
+\end{enumerate}
+
+\section{Forme indeterminate}
+Sia $f$ una funzione e $x_0$ un punto di accumulazione.\\
+Nel caso $\displaystyle \lim_{x \to x_0}f(x)$ può assumere le seguenti forme che non appartengono ad $\overline{\mathbb{R}}$:
+\begin{enumerate}
+\item[•] $[+\infty - \infty]$
+\item[•] $[\frac{\infty}{\infty}]$
+\item[•] $[\frac{0}{0}]$
+\item[•] $[0 \times \infty]$
+\item[•] $[1^{\infty}]$
+\item[•] $[0^{0}]$
+\item[•] $[\infty^{\infty}]$
+\end{enumerate}
+Esse vengono chiamate forme indeterminate; è però spesso possibile trovare forme determinate per $\displaystyle \lim_{x \to x_0}g(x)$; con $g(x) = f(x)$. 
+
+\section{Limiti notevoli}
+Di seguito alcuni limiti notevoli utili da ricordare:
+\begin{enumerate}
+\item[a)] \begin{equation} \displaystyle \lim_{x \to 0}\frac{sen(x)}{x} = 1 \implies sen(x) \sim x
+\end{equation}
+Dimostrazione:\\
+Per $x \to 0$ si ha che $|sin(x)| \leq |x| \leq |tg(x)|$. Dividendo per $|senx|$ e facendo il reciproco si ottiene $1 \geq |\frac{sin(x)}{x}| \geq |cos(x)|$ e essendo $\displaystyle \lim_{x \to 0}1 = \lim_{x \to 0}cos(x) = 1$ Per il teorema del confronto $\displaystyle \lim_{x \to 0}\frac{sen(x)}{x} = 1$
+\item[b)] \begin{equation} \displaystyle \lim_{x \to 0}\frac{1 - cos(x)}{x^2} = \frac{1}{2} \implies 1 - cos(x) \sim \frac{1}{2}x^2
+\end{equation}
+\item[c)] \begin{equation} \displaystyle \lim_{x \to +\infty}\biggl (1 + \frac{1}{x} \biggl )^x = e
+\end{equation}
+\item[d)] \begin{equation} \displaystyle \lim_{x \to 0}\frac{ln(x+1)}{x} = 1 \implies ln(x + 1) \sim x
+\end{equation}
+\item[e)] \begin{equation} \displaystyle \lim_{x \to 0}\frac{e^x - 1}{x} = 1 \implies e^x - 1 \sim x
+\end{equation}
+\item[f)] \begin{equation} \displaystyle \lim_{x \to 0}\frac{(1 + x)^\alpha - 1}{x} = \alpha \implies (1 + x)^\alpha \sim 1 + \alpha x
+\end{equation}
+\end{enumerate}
