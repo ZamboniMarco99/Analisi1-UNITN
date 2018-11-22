@@ -1,0 +1,17 @@
+\chapter{Asintoti di funzione e teoremi su funzioni continue}
+\section{Asintoti}
+Sia $f$ definita in un intorno di $+\infty$ o $-\infty$. (Con $\infty$ senza segno si intende che può andar bene sia $+$ che $-$)
+\subsection{Asintoto orizzontale}
+Se $f$ ammette limite finito $b \in \mathbb{R}$ per $x \to +\infty$ o $-\infty$ ossia $\displaystyle \lim_{x \to \infty}f(x) = b$ allora la retta di equazione $y = b$ si dice asintoto orizzontale per $x \to +\infty$ o $-\infty$
+\subsection{Asintoto verticale}
+Sia $x_0 \in \mathbb{R}$; $f$ definita in un intorno destro o sinistro di $x_0$ (escluso). Se $\displaystyle \lim_{x \to x_0}f(x) = +\infty$ oppure $-\infty$ allora la retta $x = x_0$ si dice asintoto verticale di $f$ per $x \to x_0$
+\subsection{Asintoto obliquo}
+Se $\exists\ a,b \in \mathbb{R},\ a \neq 0\ |\ \displaystyle \lim_{x \to \infty}[f(x) - (ax + b)] = 0$ allora la retta di equazione $y = ax + b$ si dice asintoto obliquo per $x \to +\infty$ o $-\infty$
+
+\section{Trovare un asintoto obliquo}
+Se $\displaystyle \lim_{x \to \infty}f(x) = \infty$ ha senso cercare un asintoto obliquo di equazione.\\
+Se $\exists \text{-no } a,b \in \mathbb{R},\ a \neq 0 \implies \exists$ asintoto obliquo $y = ax + b$:
+\begin{enumerate}
+\item[•] $a = \displaystyle \lim_{x \to \infty} \frac{f(x)}{x}$ in quanto dalla definizione $\displaystyle \lim_{x \to \infty} \frac{f(x) - (ax + b)}{x} = 0 \implies \displaystyle \lim_{x \to \infty}\frac{f(x)}{x} - a = 0$
+\item[•] $b  =\displaystyle \lim_{x \to \infty}f(x) - ax$ e si evince dalla definizione.
+\end{enumerate}
