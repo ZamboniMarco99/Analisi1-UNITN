@@ -1,4 +1,4 @@
-\chapter{Asintoti di funzione e teoremi su funzioni continue}
+\chapter{Asintoti di funzione e teoremi riguardo la continuità}
 \section{Asintoti}
 Sia $f$ definita in un intorno di $+\infty$ o $-\infty$. (Con $\infty$ senza segno si intende che può andar bene sia $+$ che $-$)
 \subsection{Asintoto orizzontale}
@@ -15,3 +15,67 @@ Se $\exists \text{-no } a,b \in \mathbb{R},\ a \neq 0 \implies \exists$ asintoto
 \item[•] $a = \displaystyle \lim_{x \to \infty} \frac{f(x)}{x}$ in quanto dalla definizione $\displaystyle \lim_{x \to \infty} \frac{f(x) - (ax + b)}{x} = 0 \implies \displaystyle \lim_{x \to \infty}\frac{f(x)}{x} - a = 0$
 \item[•] $b  =\displaystyle \lim_{x \to \infty}f(x) - ax$ e si evince dalla definizione.
 \end{enumerate}
+
+\section{Teorema ponte}
+Sia $f: \mathbb{X} \to \mathbb{R}; x_0$ punto di accumulazione per $\mathbb{X}$ allora:
+\begin{equation}
+\displaystyle \lim_{x \to x_0}f(x) = l \iff \forall \{x_n\}_n;\ x_i \in \mathbb{X} \setminus \{x_0\};\ x_n \xrightarrow[n]{} x_0 \text{ si ha } \lim_{n}f(x_n) = l
+\end{equation}
+
+\section{Positività di un intorno}
+Sia $f: \mathbb{X} \to \mathbb{R}$ funzione continua in $x_0$:
+\begin{equation}
+f(x_0) > 0 \implies f(x) > 0 \text{ in un intorno di } x_0
+\end{equation}
+
+\section{Funzione di Dirichlet}
+Sia la funzione di Dirichlet: $f(x) = 
+\begin{cases}
+1 \text{ se } x \in \mathbb{Q}\\
+0 \text{ se } x \not \in \mathbb{Q}
+\end{cases}$\\
+Essa è una funzione non continua in nessun punto:
+\begin{enumerate}
+\item[•] Non continua in $x_0 \in \mathbb{Q}$:\\
+$f(x_0) = 1;\ \exists\ x_n \to x_0\ |\ x_n \not \in \mathbb{Q} \implies f(x_n) = 0 \neq 1$
+\item[•] Non continua in $x_0 \not \in \mathbb{Q}$:\\
+$f(x_0) = 0;\ \exists\ x_n \to x_0\ |\ x_n \in \mathbb{Q} \implies f(x_n) = 1 \neq 0$ 
+\end{enumerate}
+
+\section{Teorema esistenza degli zeri}
+Sia $f: [a,b] \to \mathbb{R}$ continua.
+\begin{equation}
+f(a) \times f(b) < 0 \implies \exists\ x_0 \in (a,b)\ |\ f(x_0) = 0
+\end{equation}
+Per di più se $f$ strettamente monotona lo zero è unico
+\subsection{Corollario}
+Siano $f,g: [a,b]$ continue
+\begin{equation}
+f(a) > g(a);\ f(b) < g(b) \implies \exists\ x_0\ |\ f(x_0) = g(x_0)
+\end{equation}
+\subsection{Metodo della bisezione}
+Sia $f: [a,b] \to \mathbb{R}$ e $f(a) \times f(b) < 0$. Per esempio $f(a) > 0$ e $f(b) < 0$. Per trovare uno zero della funzione si può applicare il seguente algoritmo:
+\begin{enumerate}
+\item[0)] Sia $n = 0$
+\item[1)] Siano $a_n = a$ e $b_n = b$
+\item[2)] Sia $c_n = \frac{a_n + b_n}{2}$
+\item[3)] \begin{enumerate}
+	\item[•] Se $f(c_n) = 0$ allora lo zero della funzione è proprio $c_n$
+	\item[•] Se $f(c_n) < 0$ allora $a_{n+1} = a_n;\ b_{n+1} = c_n;\ n = n + 1;$. Ricomincio poi dal passo 2
+	\item[•] Se $f(c_n) > 0$ allora $a_{n+1} = c_n;\ b_{n+1} = b_n;\ n = n + 1;$. Ricomincio poi dal passo 2 
+\end{enumerate}
+\end{enumerate}
+La ricorsione funziona grazie al fatto che valgono le medesime proprietà iniziali sia in $f: [a,b]$ che in $f: [a_n,b_n]$
+
+\section{Teorema dei valori intermedi}
+Sia $I$ un intervallo; $f: I \to \mathbb{R}$ continua.\\
+$f$ assume allora tutti i valori compresi tra $\displaystyle \inf_I f \text{ e } \sup_I f$
+\subsection{Dimostrazione}
+Sia $y \in \displaystyle (\inf_I f, \sup_I f)$. Per definizione di $sup$ e $inf$ $\exists \ a,b \in I\ |\ f(a) < y < f(b)$. Basta applicare il corollario del teorema dell'esistenza degli zeri a $f(x)$ e $g(x) = y$ in $[a,b]$ e quindi $\exists \ x_0\ |\ f(x_0) = y$
+
+\section{Continuità funzione inversa}
+Sia $f: \mathbb{X} \subseteq \mathbb{R} \to \mathbb{R}$ una funzione continua e iniettiva in $\mathbb{X}$ e sia $f^{-1}:f(\mathbb{X}) \to \mathbb{X}$ l'inversa di $f$.\\
+Se $\mathbb{X}$ intervallo $\implies f^{-1}$ continua.
+
+\section{Teorema di Weierstrass}
+Sia $f:[a,b] \to \mathbb{R}$ continua in $[a,b]$ allora $\exists$no $m = min(f)$ e $M = max(f)$ e $f([a,b]) = [m,M]$
