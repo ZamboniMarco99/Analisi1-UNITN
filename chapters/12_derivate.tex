@@ -1,1 +1,59 @@
 \chapter{Derivate}
+\section{Definizione}
+Sia $I \subseteq \mathbb{R}$ intercallo; $f: I \to \mathbb{R}$; $x_0 \in I$. Chiameremo \textbf{derivata} di $f$ in $x_0$:
+\begin{equation}
+f^{\prime}(x_0) = \diff{f(x_0)}{x} \triangleq \displaystyle \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0} = \lim_{h \to 0} \frac{f(x +h) - f(x_0)}{h}
+\end{equation}
+se il limite esiste (sia finito che infinito).\\
+$\frac{f(x) - f(x_0)}{x - x_0}$ è chiamato rapporto incrementale
+
+\section{Retta tangente}
+Viene definita retta tangente $f$ in $x_0$ la retta di equazione:
+\begin{equation}
+y = f^{\prime}(x_0)(x - x_0) + f(x_0)
+\end{equation}
+Il rapporto incrementale è quindi il coefficente angolare della retta tangente
+
+\section{Derivabilità}
+La funzione $f$ si dice derivabile in $x_0$ se $\exists\ f^{\prime}(x_0)$ ed è finito
+\subsection{Osservazione}
+\begin{equation}
+f \text{ derivabile in } x_0 \implies f \text{ continua in } x_0
+\end{equation}
+Da porre particolare attenzione al fatto che non vale il contrario
+
+\section{Errore}
+\begin{equation}
+E_1 \triangleq f(x) - (f(x_0) + f^{\prime}(x - x_0)) = o(x - x_0) \text{ per } x \to x_0
+\end{equation}
+L'errore di approssimazione della funzione alla retta tangente in $x_0$ è quindi un o-piccolo di $(x - x_0)$
+\subsection{Dimostrazione}
+\begin{equation}
+\displaystyle \lim_{x \to x_0} \frac{f(x) - f(x_0) - f^{\prime}(x - x_0)}{x - x_0} = \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0} - f^{\prime}(x_0) = 0
+\end{equation}
+
+\section{Derivata destra e sinistra}
+\subsection{Derivata destra}
+\begin{equation}
+f^{\prime}_+(x_0) \triangleq \displaystyle \lim_{x \to x_0^+} \frac{f(x) - f(x_0)}{x - x_0^-}
+\end{equation}
+\subsection{Derivata sinistra}
+\begin{equation}
+f^{\prime}_-(x_0) \triangleq \displaystyle \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}
+\end{equation}
+\subsection{Osservazione}
+\begin{equation}
+\exists\ f^{\prime}(x_0) \implies \exists\ f^{\prime}_+(x_0) = f^{\prime}(x_0);\ f^{\prime}_-(x_0) = f^{\prime}(x_0)
+\end{equation}
+
+\section{Lemma segno $f - f^{\prime}$}
+Sia $f: (a,b)  \to \mathbb{R}$ derivabile in $x_0$ con $f(x_0) \neq 0$ allora $f(x) - f(x_0)$ cambia segno attraversando $x_0$.
+
+\section{Punti di non derivabilità}
+Sia $f: ]a,b[  \to \mathbb{R}$ continua in $x_0$.\\
+Supposto $\exists\ f^{\prime}_-(x_0),\ f^{\prime}_+(x_0)$ e $f^{\prime}_-(x_0) \neq f^{\prime}_+(x_0)$ allora il punto $(x_0, f(x_0)) \in \ ]a,b[ \times \mathbb{R}$ è:
+\begin{enumerate}
+\item[i)] \textbf{punto angoloso} se $f^{\prime}_-(x_0),\ f^{\prime}_+(x_0)$ o entrambe sono finite
+\item[ii)] \textbf{cuspide} se $f^{\prime}_-(x_0) = +\infty$ e $f^{\prime}_+(x_0) = -\infty$ o viceversa
+\item[iii)] \textbf{tangente verticale} se $f^{\prime}_-(x_0) = f^{\prime}_+(x_0) = +\infty$ o $-\infty$
+\end{enumerate}
