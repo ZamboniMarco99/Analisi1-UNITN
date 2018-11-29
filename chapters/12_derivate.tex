@@ -57,3 +57,82 @@ Supposto $\exists\ f^{\prime}_-(x_0),\ f^{\prime}_+(x_0)$ e $f^{\prime}_-(x_0) \
 \item[ii)] \textbf{cuspide} se $f^{\prime}_-(x_0) = +\infty$ e $f^{\prime}_+(x_0) = -\infty$ o viceversa
 \item[iii)] \textbf{tangente verticale} se $f^{\prime}_-(x_0) = f^{\prime}_+(x_0) = +\infty$ o $-\infty$
 \end{enumerate}
+
+\section{Algebretta delle derivate}
+\begin{enumerate}
+\item[•] $(f+g)^{\prime} = f^{\prime} + g^{\prime}$
+\item[•] $(fg)^{\prime} = f^{\prime}g + fg^{\prime}$
+\item[•] $(\frac{f}{g})^{\prime} = \frac{f^{\prime}g + fg^{\prime}}{g^2}$
+\item[•] $(\frac{1}{f})^{\prime} = -\frac{f^{\prime}}{f^2}$
+\item[•] $(f \circ g)^{\prime}(x_0) = f^{\prime}(g(x_0))g^{\prime}(x_0)$\\
+$(f \circ g \circ h)^{\prime}(x_0) = f^{\prime}(g(h(x_0)))g^{\prime}(h(x_0))h^{\prime}(x_0)$
+\item[•] $(f(x)^{g(x)})^{\prime} = f(x)^{g(x)}[g^{\prime}log(f(x)) + g(x)f^{\prime}(x)]$
+\end{enumerate}
+
+\section{Teorema esistenza derivata da derivate destra e sinistra}
+Sia $f: ]a,b[$ continua; $x_0 \in ]a,b[$ Supposta $f$ derivabile in ogni $x \neq x_0$:
+\begin{enumerate}
+\item[i)] se $\exists$no finiti $f^{\prime}_+(x_0) = f^{\prime}_-(x_0) = a$ allora $\exists\ f^{\prime}(x_0) = a$
+\item[ii)] se $\exists$no finiti $f^{\prime}_+(x_0) \neq f^{\prime}_-(x_0)$ allora $\not\exists\ f^{\prime}(x_0) = a$
+\end{enumerate}
+
+\section{Derivata funzione inversa}
+$I$ intervallo, $x_0 \in I; f:I \to \mathbb{R}$ continua e strettamente monotona.\\
+Se $f$ è derivabile in $x_0$ e $f^{\prime}(x_0) \neq 0$ allora la funzione $f^{-1}: f(I) \to I$ è derivabile in $f(x_0)$:
+\begin{equation}
+(f^{-1})^{\prime}(f(x_0)) = \frac{1}{f^{\prime}}
+\end{equation}
+\subsection{Dimostrazione}
+Sia $y_0 = f(x_0);\ y = f(x)$ (ovvero $f^{-1}(y_0) = x_0;\ f^{-1}(y) = x$.
+\begin{equation} \displaystyle \begin{split}
+(f^{-1})^{\prime}(y_0) = \lim_{y \to y_0}\frac{f^{-1}(y) - f^{-1}(y_0)}{y - y_0} = \lim_{x \to x_0}\frac{f^{-1}(f(x)) - f^{-1}(f(x_0))}{f(x) - f(x_0)}\\
+ = \lim_{x \to x_0}\frac{x - x_0}{f(x) - f(x_0)} = \frac{1}{f^{\prime}(x_0)}
+\end{split} \end{equation}
+
+\section{Estremi locali di funzione}
+\subsection{Teorema di Fermat}
+Sia $f: (a,b) \to \mathbb{R};\ x_0 \in (a,b)$. Se $f$ è derivabile in $x_0$ e se $x_0$ è un punto di massimo (o minimo) locale per $f$ allora $f^{\prime}(x_0) = 0$
+\subsection{Dimostrazione}
+$x_0$ punto di massimo locale $\implies \exists\ U$ intorno di $x_0\ |\ f(x_0) \geq f(x)\ \forall\ x \in U \cap (a,b)$.
+\begin{equation} 
+\begin{cases}
+\displaystyle \lim_{x \to x_0^+}\frac{f(x) - f(x_0)}{x - x_0} \leq 0\\
+\displaystyle \lim_{x \to x_0^-}\frac{f(x) - f(x_0)}{x - x_0} \geq 0\\
+\exists\ f^{\prime}(x_0) = f^{\prime}_-(x_0) = f^{\prime}_+(x_0)
+\end{cases}
+\implies f^{-1}(x_0) = 0
+\end{equation}
+\subsection{Definizione punto critico}
+$x_0 \in (a,b)\ |\ f$ è derivabile in $x_0$ e $f^{\prime}(x_0) = 0$ viene chiamato punto critico (o stazionario) di $f$
+\subsection{Corollario}
+$f: [a,b] \to \mathbb{R};\ x_0$ estremo locale di $f$: Allora $x_0$ è:
+\begin{enumerate}
+\item[1)] punto critico
+\item[2)] appartenente a $(a,b)$
+\item[3)] punto di non derivalbilità
+\end{enumerate} 
+
+\section{Teorema di Lagrange}
+Sia $f: [a,b]$ continua in $[a,b]$, derivabile in $]a,b[$ allora:
+\begin{equation}
+\exists\ c \in\ ]a,b[\ |\ f^{\prime}(c) = \frac{f(b) - f(a)}{b - a}
+\end{equation}
+\subsection{Teorema di Rolle}
+Sia $f: [a,b]$ continua in $[a,b]$, derivabile in $]a,b[$ e $f(a) = f(b)$ allora:
+\begin{equation}
+\exists\ c \in\ ]a,b[\ |\ f^{\prime}(c) = 0
+\end{equation}
+\subsection{Dimostrazione Rolle}
+Essendo $f$ continua nell'intervallo chiuso e limitato $[a,b]$; allora $\exists\ \displaystyle \max_{[a,b]}(f), \min_{[a,b]}(f)$
+\begin{enumerate}
+\item[Caso 1:] $\displaystyle \max_{[a,b]}(f) \text{ e } \min_{[a,b]}(f) \text{ sono assunti agli estremi } \implies \max_{[a,b]}(f) = \min_{[a,b]}(f) = f(a) = f(b) \implies f \text{ costante } \implies f^{\prime} = 0$
+\item[Caso 2:] $\displaystyle \max_{[a,b]}(f) \text{ o } \min_{[a,b]}(f)$ all'interno dell'intervallo. Supposto il massimo o il minimo interno $x_0 \in\ ]a,b[ \implies f^{\prime}(x_0) = 0$ per il teorema di Fermat
+\end{enumerate}
+\subsection{Dimostrazione Lagrange}
+Sia $h(x) = f(x) - \biggl [\frac{f(b) - f(a)}{b - a}(x-a) + f(a) \biggl ]$. Essendo $h(a) = h(b) = 0$ per il teorema di Rolle $\exists\ c\ |\ h^{\prime}(c) = 0$. Ma $h^{\prime} = f^{\prime}(x) - \frac{f(b) - f(a)}{b - a} \implies f^{\prime}(c) = \frac{f(b) - f(a)}{b - a}$
+
+\section{Teorema di Cauchy}
+Siano $f,g: [a,b] \to \mathbb{R}$ continue in $[a,b]$ e derivabili in $(a,b)$. Allora $\exists\ c \in\ ]a,b[\ |\ [f(b) - f(a)]g^{\prime}(c) = [g(b) - g(a)]f^{\prime}(c) $
+\subsection{Osservazione}
+Se $g(b) \neq g(a)$ e $g^{\prime}(c) \neq 0$: la tesi è equivalentemente\\
+$\frac{f^{\prime}(c)}{g^{\prime}(c)} = \frac{f(b) - f(a)}{b - a}$
