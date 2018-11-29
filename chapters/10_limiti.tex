@@ -39,17 +39,17 @@ f(x_0)>f(x)\ \forall x \neq x_0
 \end{equation}
 
 \section{Punto di accumulazione}
-Sia $A \subseteq \mathbb{R}$, si dice che $x_0 \in \overline{\mathbb{R}}$ \'e un \textbf{punto di accumulazione} per $\mathbb{A}$ se:
+Sia $A \subseteq \mathbb{R}$, si dice che $x_0 \in \overline{\mathbb{R}}$ \`e un \textbf{punto di accumulazione} per $\mathbb{A}$ se:
 \begin{equation}
 \forall\ U \in I_{x_0}\ U \setminus \{x_0\} \cap \mathbb{A} \neq \emptyset
 \end{equation}
 ossia ogni intorno di $x_0$ contiene un punto di $\mathbb{A}$ diverso da $x_0$
 \subsection{Punto di accumulazione sinistro}
-Sia $x_0 \in \mathbb{R}$ si dice \textbf{punto di accumulazione sinistro} per $\mathbb{A}$ se $x_0$ \'e un punto di accumulazione per $\mathbb{A}\ \cap\ ]-\infty,x_0[$
+Sia $x_0 \in \mathbb{R}$ si dice \textbf{punto di accumulazione sinistro} per $\mathbb{A}$ se $x_0$ \`e un punto di accumulazione per $\mathbb{A}\ \cap\ ]-\infty,x_0[$
 \subsection{Punto di accumulazione sinistro}
-Sia $x_0 \in \mathbb{R}$ si dice \textbf{punto di accumulazione destro} per $\mathbb{A}$ se $x_0$ \'e un punto di accumulazione per $\mathbb{A}\ \cap\ ]x_0,+\infty[$
+Sia $x_0 \in \mathbb{R}$ si dice \textbf{punto di accumulazione destro} per $\mathbb{A}$ se $x_0$ \`e un punto di accumulazione per $\mathbb{A}\ \cap\ ]x_0,+\infty[$
 \subsection{Punto isolato}
-Sia $A \subseteq \mathbb{R}$, un punto $x_0 \in A$ che non \'e un punto di accumulazione per $A$ si dice \textbf{punto isolato}:	
+Sia $A \subseteq \mathbb{R}$, un punto $x_0 \in A$ che non \`e un punto di accumulazione per $A$ si dice \textbf{punto isolato}:	
 \begin{equation}
 \exists U \in I_{x_0}\ |\ U\ \cap\ \mathbb{A} = \{x_0\}
 \end{equation}
@@ -83,7 +83,7 @@ Sia $x \subseteq \mathbb{R}$, $f:\mathbb{X} \rightarrow \mathbb{R}$, $x_0 \in \o
 \end{split}
 \end{equation}
 \section{Algebra dei limiti}
-Siano $f, g$ due funzioni, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $domf \cap domg$
+Siano $f, g$ due funzioni, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $\dom f \cap \dom g$
 supponiamo $\displaystyle \lim_{x \to x_0}f(x) = l_f \in \mathbb{R}$ e $\displaystyle \lim_{x \to x_0}g(x) = l_g \in \mathbb{R}$ allora:
 \begin{enumerate}
 \item[a)]$f(x)\pm g(x) \rightarrow l_f \pm l_g$ per $x \to x_0$
@@ -91,7 +91,7 @@ supponiamo $\displaystyle \lim_{x \to x_0}f(x) = l_f \in \mathbb{R}$ e $\display
 \item[c)]$\frac{f(x)}{g(x)} \rightarrow \frac{l_f}{l_g}$ per $x \to x_0$ ($l_g \neq 0$)
 \end{enumerate}
 \subsection{Estensione a $\overline{\mathbb{R}}$ }
-Sia $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $domf \cap domg$, allora per $x \to x_0$ si ha:
+Sia $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $\dom f \cap \dom g$, allora per $x \to x_0$ si ha:
 \begin{enumerate}
 \item[d)]Se $f(x) \to +\infty$ e $g(x)$ limitata inferiormente in un intorno di $x_0$:\\
 $f(x)+g(x) \longrightarrow +\infty$ \\
@@ -116,7 +116,7 @@ $\frac{1}{f(x)} \longrightarrow 0$
 Siano $f,g,h: \mathbb{X} \subseteq \mathbb{R} \to \mathbb{R}$ e $x_0 \in \mathbb{\overline{R}}$ punto di accumulazione per $\mathbb{X}$\\
 \begin{equation}
 \begin{cases}
-f(x) \leq g(x) \leq h(x) \text{ in un intorno } U \setminus \{x_0\} \text{ di } x_0 \in domf\\
+f(x) \leq g(x) \leq h(x) \text{ in un intorno } U \setminus \{x_0\} \text{ di } x_0 \in \dom f\\
 \displaystyle \lim_{x \to x_0}f(x) = \lim_{x \to x_0}h(x) = l \in \mathbb{\overline{R}}
 \end{cases}
 \implies \exists \displaystyle \lim_{x \to x_0}g(x) = l
@@ -177,8 +177,8 @@ In particolare per le successioni vale:
 \section{Numero di Nepero $e$ }
 Particolarmente interessante è studiare la successione $\{a_n=(1+ \frac{1}{n})^{n}, n \in \mathbb{N}, n \geq 1\}$. In particolare:
 \begin{itemize}
-\item[a)] $\{a_n\}$ \'e strettamente crescente
-\item[b)] $\{a_n\}$ \'e limitata
+\item[a)] $\{a_n\}$ \`e strettamente crescente
+\item[b)] $\{a_n\}$ \`e limitata
 \end{itemize}
 Dal teorema di esistenza del limite per funzioni monotone, segue che esiste il limite, e in particolare è finito. Avendo il valore moltissime altre proprietà in matematica viene considerato una delle costanti fondamentali:
 \begin{equation}
@@ -194,11 +194,11 @@ L'operatore $\sim$ tra due successioni è tale che $a_n \sim b_n \iff \displayst
 Sia $f:\mathbb{X} \subseteq \mathbb{R} \to \mathbb{R}$, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $\mathbb{X}$
 \begin{enumerate}
 \item[i.]Se $\displaystyle\lim_{x \to x_0} f(x)=\pm \infty$, $f$ si dice \textbf{divergente} positiva (o negativa) oppure infinita (o un infinito) per $x \to x_0$
-\item[ii.]Se $\displaystyle\lim_{x \to x_0} f(x)=\pm \infty$, $f$ si dice infinitesima (o un infinitesimo) per $x \to x_0$
+\item[ii.]Se $\displaystyle\lim_{x \to x_0} f(x)=0$, $f$ si dice infinitesima (o un infinitesimo) per $x \to x_0$
 \end{enumerate}
 
 \section{Confronto di infiniti}
-Siano $f,g$ funzioni, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $domf \cap domg$. $f,g$ entrambe divergenti per $x \to x_0$ (e $g(x) \neq 0$ in un intorno di $x_0$)
+Siano $f,g$ funzioni, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $\dom f \cap \dom g$. $f,g$ entrambe divergenti per $x \to x_0$ (e $g(x) \neq 0$ in un intorno di $x_0$)
 \begin{enumerate}
 \item[-]Se $\displaystyle \lim_{x \to x_0}\frac{f(x)}{g(x)} = 0$ si dice che $f$ è un infinito di ordine inferiore e $g$ di ordine superiore per $x \to x_0$
 \item[-]Se $\displaystyle \lim_{x \to x_0}\frac{f(x)}{g(x)} = l \in \mathbb{R}$ si dice che $f$ e $g$ sono infiniti dello stesso ordine per $x \to x_0$\\
@@ -207,7 +207,7 @@ Se $l = 1$ si può anche scrivere $f(x) \sim g(x)$ per $x \to x_0$, cioè $f$ è
 Non è comunque detto che gli infiniti siano confrontabili.
 
 \section{Confronto di infinitesimi}
-Siano $f,g$ funzioni, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $domf \cap domg$. $f,g$ entrambe infinitesime per $x \to x_0$ (e $g(x) \neq 0$ in un intorno di $x_0$)
+Siano $f,g$ funzioni, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $\dom f \cap \dom g$. $f,g$ entrambe infinitesime per $x \to x_0$ (e $g(x) \neq 0$ in un intorno di $x_0$)
 \begin{enumerate}
 \item[-]Se $\displaystyle \lim_{x \to x_0}\frac{f(x)}{g(x)} = 0$ si dice che $f$ è un infinitesimo di ordine superiore e $g$ di ordine inferiore per $x \to x_0$
 \item[-]Se $\displaystyle \lim_{x \to x_0}\frac{f(x)}{g(x)} = l \in \mathbb{R}$ si dice che $f$ e $g$ sono infinitesimi dello stesso ordine per $x \to x_0$\\
