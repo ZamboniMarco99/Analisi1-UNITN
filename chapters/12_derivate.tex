@@ -136,3 +136,48 @@ Siano $f,g: [a,b] \to \mathbb{R}$ continue in $[a,b]$ e derivabili in $(a,b)$. A
 \subsection{Osservazione}
 Se $g(b) \neq g(a)$ e $g^{\prime}(c) \neq 0$: la tesi è equivalentemente\\
 $\frac{f^{\prime}(c)}{g^{\prime}(c)} = \frac{f(b) - f(a)}{b - a}$
+
+\section{Conseguenze Lagrange}
+\subsection{Derivata funzione costante}
+Sia $f$ derivabile in $I$ e $f^{\prime}(x) = 0\ \forall\ x \in I \implies f$ costante.
+\subsubsection{Dimostrazione}
+Siano $\forall\ x_1, x_2 \in I;\ x_1 < x_2$. Applicando Lagrange ad $[x_1;x_2]\ \exists\ c \in ]x_1;x_2[\ |\ f^{\prime}(c) = \frac{f(x_2) - f(x_1)}{x_2 - x_1}$ ma essendo per ipotesi $f^{\prime}(c) = 0 \implies f(x_1) = f(x_2)$
+
+\subsection{Test di monotonia}
+Sia $f:]a,b[ \to \mathbb{R}$ derivabile Se
+\begin{enumerate}
+\item[i)] $f^{\prime}(x) \geq 0\ \forall\ x \in (a,b) \iff f$ crescente in $]a,b[$\\
+$f^{\prime}(x) \leq 0\ \forall\ x \in (a,b) \iff f$ strettamente decrescente in $]a,b[$
+\item[ii)] $f^{\prime}(x) > 0\ \forall\ x \in (a,b) \implies f$ crescente in $]a,b[$\\
+$f^{\prime}(x) < 0\ \forall\ x \in (a,b) \implies f$ strettamente decrescente in $]a,b[$
+\end{enumerate}
+
+\subsubsection{Dimostrazione punto i)}
+Parte $f$ crescente $\implies f^{\prime}(x) \geq 0$:\\
+$\forall\ x_1,x_2 \in (a,b);\ x_2>x_1$ per ipotesi $\frac{f(x_2) - f(x_1)}{x_2 - x_1} \geq 0$; Ma $\displaystyle \lim_{x_2 \to x_1}\frac{f(x_2) - f(x_1)}{x_2 - x_1} = f^{\prime}(x_1) \geq 0$\\
+\\
+Parte  $f^{\prime}(x) \geq 0 \implies$ $f$ crescente:\\ 
+Siano $a < x_1 < x_2 < b$. Applicando Lagrange ad $[x_1,x_2]$ si ha che $\exists\ c \in ]x_1,x_2[\ |\ f^{\prime}(c) = \frac{f(x_2) - f(x_1)}{x_2 - x_1} \implies f^{\prime}(c)(x_2- x_1) = f(x_2) - f(x_1)$. Ma essendo $f^{\prime}(c) > 0$ per ipotesi; $(x_2 + x_1) > 0$ per definizione allora anche $(f(x_2) - f(x_1)) > 0$.
+
+\section{Teorema de l'Hopital}
+Siano $f,g: (a,b) \to \mathbb{R}$ derivabili in $(a,b)$ e tali che:
+\begin{enumerate}
+\item[1)] $\displaystyle \lim_{x \to a^+}f(x) = \lim_{x \to a^+}g(x) = 0$
+\item[2)] $g^{\prime}(x) \neq 0$ in un intorno di $a$
+\item[3)] $\displaystyle \lim_{x \to a^+}\frac{f^{\prime}(x)}{g^{\prime}(x)} = l \in \mathbb{\overline{R}}$
+\end{enumerate}
+Allora $\exists\ \displaystyle \lim_{x \to a^+}\frac{f(x)}{g(x)} = l$
+\subsection{Dimostrazione}
+\begin{enumerate}
+\item[i)] $g(x) \neq 0$ in un intorno di $a$ in quanto per ipotesi $g^{\prime}(x) \neq 0$ in un intorno di $a \implies g$ strettamente monotona e in quanto (per ipotesi) $\displaystyle \lim_{x \to a^+}g(x) = 0$ si ha che per forza $g(x) \neq 0$ in un intorno di $a$
+\item[ii)] Il valore è effettivamente $l$ in quanto se si considerano $f,g$ estese in questo modo:
+$f(x) = \begin{cases}
+f(x) \text{ per } x>a\\
+0 \text{ per } x=a
+\end{cases}$;
+$g(x) = \begin{cases}
+g(x) \text{ per } x>a\\
+0 \text{ per } x=a
+\end{cases}$. Ottengo due funzioni continue in $[a,x]$ e derivabili in $(a,x)$. Posso quindi applicare Cauchy a $f$ e $g$.\\
+$\exists c_x \in (a,x)\ |\ \frac{f(x) - f(a)}{g(x) - g(a)} = \frac{f^{\prime}(c_x)}{g^{\prime}(c_x)} \xrightarrow[x \to a^+;\ c_x \to a^+]{} l$ per ipotesi. Ma $\frac{f(x) - f(a)}{g(x) - g(a)} = \frac{f(x)}{g(x)}$ in quanto $f(a) = g(a) = 0$
+\end{enumerate}
