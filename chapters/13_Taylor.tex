@@ -1,0 +1,53 @@
+\chapter{Polinomi di Taylor}
+\section{Formula di Taylor con resto di Peano}
+Sia $f: (a,b) \to \mathbb{R},\ x_0 \in (a,b)$. Supposto $f$ derivabile $n$ volte:\\
+Il \textbf{Polinomio di Taylor di ordine $n$ e centrato in $x_0$} associato ad $f$ è:
+\begin{equation}
+\begin{split}
+T_n(x) \triangleq f(x_0) + f^{\prime}(x_0)(x - x_0) + \frac{f^{\prime\prime}(x_0)}{2}(x - x_0)^2 +...+\frac{f^{n}(x_0)}{n!}(x - x_0)^n\\
+\displaystyle = \sum_{k=0}^n \frac{f^{(k)}(x_0)}{k!}(x - x_0)^k
+\end{split}
+\end{equation}
+Si ha che $T_n$ è l'\textbf{unico} polinomio di grado $\leq n$ che verifica:
+\begin{enumerate}
+\item[•] $T_n(x_0) = f(x_0)$
+\item[•] $T_n^{(k)} = f^{(k)}(x_0)\ \forall\ k \in \{1,...,n\}$
+\item[•] $E_n = o[(x -x_0)^n]$
+\end{enumerate}
+ove $E_n$ è l'errore di approssimazione del polinomio alla funzione.\\
+In particolare se $x_0 = 0$ il polinomio viene chiamato di Mac Laurin.
+
+\section{Polinomi di Mac Laurin per particolari funzioni}
+\begin{enumerate}
+\item[•] $\displaystyle e^x = \sum_{k=0}^n\frac{x^k}{k!} + o(x^n)$
+\item[•] $\displaystyle ln(x + 1) = \sum_{k=1}^n\frac{(-1)^{k-1}x^k}{k} + o(x^n)$
+\item[•] $\displaystyle sen(x) = \sum_{k=0}^n\frac{(-1)^{k}x^{2k + 1}}{(2k+1)!} + o(x^{2n + 2})$
+\item[•] $\displaystyle cos(x) = \sum_{k=0}^n\frac{(-1)^{k}x^{2k}}{(2k)!} + o(x^{2n + 3})$
+\item[•] $\displaystyle arctg(x) = \sum_{k=0}^n\frac{(-1)^{k}x^{2k + 1}}{2k+1} + o(x^{2n + 2})$
+\item[•] $\displaystyle \frac{1}{1 - x} = \sum_{k=0}^nx^k + \frac{x^{n+1}}{1 - x}$
+\item[•] $\displaystyle (1 + x)^\alpha = \sum_{k = 0}^n {\alpha \choose k}x^k + o(x^n)$
+\end{enumerate}
+\subsection{Osservazione}
+Per la funzione $\frac{1}{1 - x}$ si conosce in modo preciso $E_n$, il quale (oltre ad essere un $o(x^n)$) vale $\frac{x^{n+1}}{1 - x}$
+
+\section{Funzioni composte}
+Si possono utilizzare i polinomi di Mac Laurin conosciuti sostituendo ad $x$ una funzione $f(x)$ se e solo se $f(0) = 0$.
+Ad esempio se $f(0) = 0$:\\
+\begin{equation}
+e^{f(x)} = \sum_{k=0}^n\frac{(f(x))^k}{k!} + o((f(x))^n)
+\end{equation}
+
+\section{Resto di Lagrange}
+Se $f$ è $n+1$ volte derivabile in $(a,b),\ x_0 \in (a,b)$ si ha che $\exists\ c_x$ tra $x$ e $x_0$ tale che:
+\begin{equation}
+E_n(x) = \frac{f^{(n+1)}(c_x)}{(n+1)!}(x - x_0)^{n+1}
+\end{equation}
+definito come resto di Lagrange
+\subsection{Osservazione}
+Sia $T_n(x)$ il polinomio di Taylor di ordine $n$ per $f(x)$ e $E_n(x)$ il resto di Lagrange:
+\begin{equation}
+f(x) = T_n(x) + E_n(x)
+\end{equation}
+\begin{equation} \displaystyle
+\text{Se } |E_n(x)| \xrightarrow[n]{}0 \implies f(x) = \lim_{n}T_n(x)
+\end{equation}
