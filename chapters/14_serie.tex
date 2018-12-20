@@ -1,0 +1,35 @@
+\chapter{Serie}
+\section{Definizione}
+$$\sum_{k = 0}^{+\infty}a_k$$
+Viene definita serie di termine generale $a_k$
+\subsection{Convergenza e divergenza}
+Sia $s_0 = a_0,\ s_1 = a_0 + a_1$ e in generale $\displaystyle s_n = \sum_{k = 0}^n a_k$.\\
+La serie  è finita $\iff \displaystyle \lim_n s_n = s$ è finito.
+$s$ è chiamato \textbf{somma della serie} e una serie finita è detta anche \textbf{convergente}.\\
+In caso $\displaystyle \lim_n s_n = \infty$ la serie non è finita ed è detta \textbf{divergente}.\\
+Convergenza e divergenza vengono dette il \textbf{Carattere} della serie.
+\subsection{Osservazione - termini positivi}
+Se $a_k \geq 0\ \forall\ k$ allora la serie sarà convergente oppure divergente a $+\infty$.
+\subsubsection{Dimostrazione}
+Essendo $s_n$ una somma di termini positivi essa è crescente
+\subsection{Osservazione - numero finito di termini}
+Un numero finito di termini non altera il carattere:\\
+$$\sum_{k = 0}^{+\infty}a_k \text{ e } \sum_{k = n_0}^{+\infty}a_k$$ hanno lo stesso carattere
+
+\section{Limite termine generale}
+Se $\series{0} a_n$ è convergente $\implies a_n \xrightarrow[n]{}0$.\\
+Quindi affinchè una serie sia convergente il fatto che il termine generale tenda a 0 è condizione necessaria, ma non sufficiente
+
+\section{Serie notevoli}
+\subsection{Serie geometrica}
+\begin{equation}
+\series{0} q^n = \begin{cases}
+\frac{1}{1 + q} \text{ se } |q| < 1\\
++\infty \text{ se } q \geq 1\\
+\text{IRREGOLARE se } q \leq -1\\
+\end{cases}
+\end{equation}
+In particolare se la sommatoria è finita:
+\begin{equation}
+\displaystyle \sum_{k = 0}^{n} q^k = \frac{1 - q^{n + 1}}{1 - q}
+\end{equation}
